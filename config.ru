@@ -1,3 +1,3 @@
 require File.expand_path('site', File.dirname(__FILE__))
 
-run Site
+run Sinatra::Application
