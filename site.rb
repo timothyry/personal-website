@@ -1,5 +1,7 @@
 require 'sinatra'
 
-get '/' do
-  "just do it"
+class Site
+  get '/' do
+    "just do it"
+  end
 end
