@@ -4,11 +4,10 @@
 }
 div#banner {
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-	font-size: 35px;
+	font-size: 4em;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 550;
-	line-height: 39.4px;
   background: white;
   align-content: center;
   margin: auto;
@@ -22,7 +21,6 @@ div#professions {
 	font-style: italic;
 	font-variant: normal;
 	font-weight: 500;
-	line-height: 17.4px;
   padding-bottom: 10px;
 }
 div.divider {
@@ -74,12 +72,12 @@ div.sec_header {
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
-  line-height: 15.4px;
   text-decoration: line-through;
   border: 1px black dotted;
 }
 div#main {
   width: 70%;
+  height: 100%;
   background: white;
   align-content: center;
   margin: auto;
