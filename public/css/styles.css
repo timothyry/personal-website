@@ -57,3 +57,12 @@ ul {
   font-weight: 500;
   line-height: 15.4px;
 }
+div.sec_header {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 15.4px;
+  border: 1px black dotted;
+}
