@@ -12,29 +12,39 @@ div#main
         td#nav
           = "nav"
 
-  div id="sec_header"
-    = "Languages"
-  ul
-    li HTML/CSS
-    li C/C++
-    li Java
-    li Ruby
+  - about_text = "I'm a burgeoning software developer interested in data analysis and web applications. \
+                  Previously a mechanical engineer, I enjoy applying similar concepts of design to the world of code."
 
-  div id="sec_header"
-    = "Tools"
-  ul
-    li git
-    li Flow 3-D
-    li SolidWorks
-    li ANSYS
+  div.sec_header_black
+    div#about
+      = "About"
+      <br>
+      div.main_text
+        = about_text
 
-  div id="sec_header"
+  div.sec_header_white
+    div#skills
+      = "Skills"
+      div.main_text
+        ul
+          li HTML/CSS
+          li C/C++
+          li Java
+          li Ruby
+
+        ul
+          li git
+          li Flow 3-D
+          li SolidWorks
+          li ANSYS
+
+  div.sec_header_black
     = "Projects"
 
-  div id="sec_header"
+  div.sec_header_white
     = "Publications"
-  ul
-    li Buoy Paper
+    ul
+      li Buoy Paper
 
-  div id="sec_header"
+  div.sec_header_black
     = "Resume"

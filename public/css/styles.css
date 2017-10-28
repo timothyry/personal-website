@@ -42,12 +42,11 @@ blockquote {
 	font-size: 21px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 400;
 	line-height: 30px;
 }
 pre {
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-	font-size: 13px;
+	font-size: 0.8em;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
@@ -57,27 +56,54 @@ ul {
   margin: 0;
   padding: 0;
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-  font-size: 14px;
+  font-size: 1em;
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
-  line-height: 15.4px;
 }
-div.sec_header {
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-  font-size: 18px;
+div.sec_header_white {
+  font-family: Contrail One;
+  font-size: 1.5em;
   font-style: normal;
   font-variant: normal;
-  font-weight: 500;
-  text-decoration: line-through;
-  border: 1px black dotted;
+  background: white;
+  width: 100%;
+  text-align: center;
+  padding: 0.2em 0.2em 0.2em 0.2em;
+}
+div.sec_header_black {
+  font-family: Contrail One;
+  font-size: 1.5em;
+  font-style: normal;
+  font-variant: normal;
+  background: black;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 0.2em 0.2em 0.2em 0.2em;
 }
 div#main {
   background: gray;
   align-content: center;
   margin: auto;
   padding: 0px 0px 0px 0px;
-  border: 1px red;
+}
+div#about {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  width: 70%;
+  align-content: center;
+  margin: auto;
+}
+div.main_text {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-size: 0.8em;
+}
+div#skills {
+  text-align: center;
+  text-decoration: none;
+  color: black;
 }
 td#top {
   background: #ffb90f;
@@ -91,15 +117,13 @@ a {
 }
 td#name {
   background: white;
-  width: 45%
-  padding-left: 1em;
+  width: 45%;
   text-align: left;
+  padding-left: 1em;
 }
 td#nav {
   background: white;
   width: 45%;
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;
   text-align: right;
 }
 tr#banner {
@@ -107,8 +131,6 @@ tr#banner {
   margin: 0px 0px 0px 0px;
 }
 table#banner {
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;
   width: 100%;
   border-collapse: collapse;
 }
