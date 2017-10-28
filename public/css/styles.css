@@ -4,7 +4,7 @@
 }
 div#banner {
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-	font-size: 2.3em;
+	font-size: 1.8em;
 	font-style: normal;
 	font-variant: normal;
   background: white;
@@ -16,10 +16,11 @@ div#banner {
 
 div#professions {
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-	font-size: 0.4em;
+	font-size: 0.5em;
 	font-style: italic;
 	font-variant: normal;
   padding-bottom: 5px;
+  font-weight: normal;
 }
 div.divider {
   border: 0;
@@ -116,19 +117,21 @@ a {
   color: white;
 }
 td#name {
+  font-family: Poiret One;
   background: white;
   width: 45%;
   text-align: left;
   padding-left: 1em;
+  font-weight: bold;
 }
 td#nav {
+  font-family: Poiret One;
   background: white;
   width: 45%;
   text-align: right;
 }
 tr#banner {
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;
+
 }
 table#banner {
   width: 100%;
