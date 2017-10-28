@@ -64,7 +64,7 @@ ul {
 }
 div.sec_header_white {
   font-family: Contrail One;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-style: normal;
   font-variant: normal;
   background: white;
@@ -74,7 +74,7 @@ div.sec_header_white {
 }
 div.sec_header_black {
   font-family: Contrail One;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-style: normal;
   font-variant: normal;
   background: black;
@@ -99,7 +99,7 @@ div#about {
 }
 div.main_text {
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-  font-size: 0.8em;
+  font-size: 0.65em;
 }
 div#skills {
   text-align: center;
@@ -110,11 +110,17 @@ td#top {
   background: #ffb90f;
   width: 10%;
   font-size: 0.5em;
-  opacity: 0.85;
+}
+
+td#top a {
+	color:white;
+}
+
+td#top:hover {
+	opacity: 0.7;
 }
 a {
   text-decoration: none;
-  color: white;
 }
 td#name {
   font-family: Advent Pro;
@@ -123,12 +129,31 @@ td#name {
   text-align: left;
   padding-left: 1em;
 }
+/* navigation styling */
+li.nav {
+	float: left;
+	padding: 0.5em;
+	color: black;
+}
+li.nav:hover {
+	opacity: 0.7;
+}
+ul.nav {
+	list-style-type: none;
+}
 td#nav {
   font-family: Advent Pro;
   background: white;
   width: 45%;
   text-align: right;
+  font-size: 0.75em;
+  content-align: right;
 }
+
+td#nav a {
+	color: black;
+}
+
 tr#banner {
 
 }
@@ -139,4 +164,45 @@ table#banner {
 body {
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
+}
+ /* Style all font awesome icons */
+.fa {
+    padding: 0.5em;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+	border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+} 
+
+.fa-envelope-o {
+	background: orange;
+	color: white;
+}
+
+.fa-instagram {
+	background: #ff5db1; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #ff5db1 0%, #ea5702 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #ff5db1 0%,#ea5702 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #ff5db1 0%,#ea5702 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#ea5702',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	color: white;
 }

@@ -10,10 +10,23 @@ div#main
             = "Software Developer \/\/ Mechanical Engineer"
         end
         td#nav
-          = "nav"
+          ul
+            li.nav 
+              a(href='#About') About
+            li.nav 
+              a(href='#Skills') Skills
+            li.nav 
+              a(href='#Projects') Projects
+            li.nav 
+              a(href='#Publications') Publications
+            li.nav 
+              a(href='#Resume') Resume
+            li.nav 
+              a(href='#Contact') Contact
 
   - about_text = "I'm a burgeoning software developer interested in data analysis and web applications. \
-                  Previously a mechanical engineer, I enjoy applying similar concepts of design to the world of code."
+                  Previously a mechanical engineer, I enjoy applying similar concepts of design within the world of code. \
+                  Math & science tutor. NBA enthusiast &#127936;."
 
   div.sec_header_black
     div#about
@@ -40,6 +53,9 @@ div#main
 
   div.sec_header_black
     = "Projects"
+    ul
+      li Political Discord
+      li Basketball Sim
 
   div.sec_header_white
     = "Publications"
@@ -51,3 +67,12 @@ div#main
 
   div.sec_header_white
     = "Contact"
+    ul
+      li
+        a(href='mailto:timothyemmerich@gmail.com' class='fa fa-envelope-o')
+      li
+        a(href='http://twitter.com/palebeatz' class='fa fa-twitter')
+      li
+        a(href='http://facebook.com/timothyry' class='fa fa-facebook')
+      li
+        a(href='http://instagram.com/timothyry' class='fa fa-instagram')
