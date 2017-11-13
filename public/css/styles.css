@@ -77,7 +77,11 @@ div#contact {
   color: black;
   width: 70%;
   align-content: center;
+  padding: 1em;
   margin: auto;
+}
+div#contact table {
+	margin: 0 auto;
 }
 div.main_text {
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
@@ -87,6 +91,26 @@ div#skills {
   text-align: center;
   text-decoration: none;
   color: black;
+  padding: 1em;
+  width: 70%;
+  margin: 0 auto;
+}
+div#skills table {
+	margin: auto;
+	text-align: left;
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}
+div#skills td {
+	color: rgb(40,40,40);
+	font-size: 0.7em;
+	padding: 0 0.5em 0 0.5em;
+	vertical-align: top;
+}
+div#skills th {
+	padding: 0 0.5em 0 0.5em;
+	font-size: 0.8em;
+	color: #ffb90f;
+	font-weight: bold;
 }
 td#top {
   background: #ffb90f;
@@ -135,6 +159,7 @@ li.contact:hover {
 ul.contact {
 	list-style-type: none;
 	content-align: center;
+	text-align: center;
 }
 
 td#nav {

@@ -23,63 +23,74 @@ div#main
               a(href='#resume') Resume
             li.nav
               a(href='#contact') Contact
-
   - about_text = "I'm a burgeoning software developer interested in data analysis and web applications. \
                   Previously a mechanical engineer, I enjoy applying similar concepts of design within the world of code. \
                   Math & science tutor. NBA enthusiast 🏀."
-  
-  div.divider
-  
   div#main_pic ontouchstart=""
-
   div.sec_header_black
     div#about
       = "About"
       <br>
       div.main_text
         = about_text
-
   div.sec_header_white
     div#skills
       = "Skills"
+      <br>
       div.main_text
-        ul
-          li HTML/CSS
-          li C/C++
-          li Java
-          li Ruby
-
-        ul
-          li git
-          li Flow 3-D
-          li SolidWorks
-          li ANSYS
-
+        table
+          tr
+            th Languages
+            th Tools
+            th Concepts
+          tr
+            td
+              ul
+                li HTML
+                li CSS
+                li JavaScript
+                li SQL
+                li C/C++
+                li Java
+                li Ruby
+            td
+              ul
+                li git
+                li cmd/unix
+                li Flow 3-D
+                li SolidWorks
+                li ANSYS
+                li MS Office Suite
+            td
+              ul
+                li DOM
+                li JSON
+                li Big O
   div.sec_header_black
     = "Projects"
     ul
       li Political Discord
       li Basketball Sim
-
   div.sec_header_white
     = "Publications"
     ul
       li Buoy Paper
-
   div.sec_header_black
     = "Resume"
-
   div.sec_header_white
     div#contact
       = "Contact"
-      ul.contact
-        li.contact
-          a(href='mailto:timothyemmerich@gmail.com' class='fa fa-envelope-o')
-        li.contact
-          a(href='http://github.com/timothyry' class='fa fa-github')
-        li.contact
-          a(href='http://twitter.com/palebeatz' class='fa fa-twitter')
-        li.contact
-          a(href='http://facebook.com/timothyry' class='fa fa-facebook')
-        li.contact
-          a(href='http://instagram.com/timothyry' class='fa fa-instagram')
+      table
+        tr
+          td
+            ul.contact
+              li.contact
+                a(href='mailto:timothyemmerich@gmail.com' class='fa fa-envelope-o')
+              li.contact
+                a(href='http://github.com/timothyry' class='fa fa-github')
+              li.contact
+                a(href='http://twitter.com/palebeatz' class='fa fa-twitter')
+              li.contact
+                a(href='http://facebook.com/timothyry' class='fa fa-facebook')
+              li.contact
+                a(href='http://instagram.com/timothyry' class='fa fa-instagram')
