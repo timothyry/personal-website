@@ -4,7 +4,7 @@
 }
 div#banner {
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-	font-size: 1.8em;
+	font-size: 2.2em;
 	font-style: normal;
 	font-variant: normal;
   background: white;
@@ -64,7 +64,7 @@ ul {
 }
 div.sec_header_white {
   font-family: Contrail One;
-  font-size: 1.7em;
+  font-size: 2em;
   font-style: normal;
   font-variant: normal;
   background: white;
@@ -74,7 +74,7 @@ div.sec_header_white {
 }
 div.sec_header_black {
   font-family: Contrail One;
-  font-size: 1.7em;
+  font-size: 2em;
   font-style: normal;
   font-variant: normal;
   background: black;
@@ -107,7 +107,7 @@ div#contact {
 }
 div.main_text {
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-  font-size: 0.65em;
+  font-size: 1em;
 }
 div#skills {
   text-align: center;
@@ -189,7 +189,7 @@ body {
  /* Style all font awesome icons */
 .fa {
     padding: 0.5em;
-    font-size: 1em;
+    font-size: 2em;
     text-align: center;
     text-decoration: none;
 	border-radius: 50%;
