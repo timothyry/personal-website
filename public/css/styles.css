@@ -9,9 +9,13 @@ div#banner {
 	font-variant: normal;
   background: white;
   align-content: center;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: 0.05em dashed #ffb90f;
 }
 
 div#professions {
@@ -23,12 +27,8 @@ div#professions {
   font-weight: normal;
 }
 div.divider {
-  border: 0;
-  height: 2px;
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  padding: 3em;
+  background: white;
 }
 p {
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
@@ -70,7 +70,6 @@ div.sec_header_white {
   background: white;
   width: 100%;
   text-align: center;
-  padding: 0.2em 0.2em 0.2em 0.2em;
 }
 div.sec_header_black {
   font-family: Contrail One;
@@ -81,7 +80,6 @@ div.sec_header_black {
   width: 100%;
   color: white;
   text-align: center;
-  padding: 0.2em 0.2em 0.2em 0.2em;
 }
 div#main {
   background: gray;
@@ -96,6 +94,7 @@ div#about {
   width: 70%;
   align-content: center;
   margin: auto;
+  padding: 0.3em;
 }
 div#contact {
   text-decoration: none;
@@ -133,7 +132,7 @@ a {
 td#name {
   font-family: Advent Pro;
   background: white;
-  width: 45%;
+  width: 35%;
   text-align: left;
   padding-left: 1em;
 }
@@ -160,15 +159,18 @@ li.contact:hover {
 }
 ul.contact {
 	list-style-type: none;
+	content-align: center;
 }
 
 td#nav {
   font-family: Advent Pro;
   background: white;
-  width: 45%;
+  width: 55%;
   text-align: right;
   font-size: 0.75em;
   content-align: right;
+  padding: 0;
+  margin: 0;
 }
 
 td#nav a {
@@ -176,7 +178,8 @@ td#nav a {
 }
 
 tr#banner {
-
+	padding: 0;
+	margin: 0;
 }
 table#banner {
   width: 100%;
@@ -188,8 +191,9 @@ body {
 }
  /* Style all font awesome icons */
 .fa {
-    padding: 0.5em;
+	padding: 0.5em;
     font-size: 2em;
+	width: 1em;
     text-align: center;
     text-decoration: none;
 	border-radius: 50%;
@@ -236,16 +240,14 @@ body {
 div#main_pic {
 	background-size: contain;
 	background-repeat: no-repeat;
-	opacity: 0.9;
-	display: block;
-	padding: 0;
-	margin: 0 auto;
-	background-color: #ffb90f;
+	opacity: 1;
+	padding: 5em 5em 5em 5em;
+	margin: 0 0 0 0;
+	background-color: white;
 	background-image: url("../images/main_img.png");
-	height: 20em;
-	width: auto;
+	height: 15em;
+	width: 100%;
 	max-height: 100%;
 	max-width: 100%;
 	align-content: right;
-	right: 0em;
 }
