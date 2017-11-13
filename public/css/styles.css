@@ -219,7 +219,7 @@ div#main_pic {
 	opacity: 1;
 	margin: 0 0 0 0;
 	background-color: white;
-	background-image: url("../images/main_img.png");
+	background-image: url(../images/main_img.png);
 	height: 25em;
 	width: 100%;
 	border-top: 5em solid white;
@@ -227,6 +227,25 @@ div#main_pic {
 	max-height: 100%;
 	max-width: 100%;
 	align-content: right;
+	right: 0px;
+}
+
+div#main_pic:hover {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 4em;
+	opacity: 1;
+	margin: 0 0 0 0;
+	background-color: white;
+	background-image: url(../images/main_img2.png);
+	height: 25em;
+	width: 100%;
+	border-top: 5em solid orange
+	overflow: hidden;
+	max-height: 100%;
+	max-width: 100%;
+	align-content: right;
+	right: 0px;
 }
 
 @media only screen and (max-width : 640px) {
