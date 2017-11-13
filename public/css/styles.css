@@ -230,7 +230,7 @@ div#main_pic {
 	right: 0px;
 }
 
-div#main_pic:hover {
+div#main_pic:active {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: 4em;
