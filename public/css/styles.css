@@ -97,6 +97,14 @@ div#about {
   align-content: center;
   margin: auto;
 }
+div#contact {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  width: 70%;
+  align-content: center;
+  margin: auto;
+}
 div.main_text {
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
   font-size: 0.65em;
@@ -223,4 +231,21 @@ body {
 	background: linear-gradient(135deg, #ff5db1 0%,#ea5702 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#ea5702',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	color: white;
+}
+
+div#main_pic {
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+	display: block;
+	padding: 0;
+	margin: 0 auto;
+	background-color: #ffb90f;
+	background-image: url("../images/main_img.png");
+	height: 20em;
+	width: auto;
+	max-height: 100%;
+	max-width: 100%;
+	align-content: right;
+	right: 0em;
 }
