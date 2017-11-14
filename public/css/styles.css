@@ -88,6 +88,15 @@ div#contact {
   padding: 1em;
   margin: auto;
 }
+div#projects {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  width: 70%;
+  align-content: center;
+  padding: 1em;
+  margin: auto;
+}
 div#contact table {
 	margin: 0 auto;
 }
