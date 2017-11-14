@@ -12,9 +12,9 @@ div#main
         td#nav
           ul.nav
             li.nav
-              a(href='#about') About
+              a(href='#about_link') About
             li.nav
-              a(href='#skills') Skills
+              a(href='#skills_link') Skills
             li.nav
               a(href='#projects') Projects
             li.nav
@@ -26,17 +26,21 @@ div#main
   - about_text = "I'm a burgeoning software developer interested in data analysis and web applications. \
                   Previously a mechanical engineer, I enjoy applying similar concepts of design within the world of code. \
                   Math & science tutor. NBA enthusiast 🏀."
+                  
+  div.divider
+  
   div#main_pic ontouchstart=""
+  
+  span#about_link
   div.sec_header_black
     div#about
       = "About"
-      <br>
       div.main_text
         = about_text
+  span#skills_link
   div.sec_header_white
     div#skills
       = "Skills"
-      <br>
       div.main_text
         table
           tr
