@@ -16,9 +16,9 @@ div#main
             li.nav
               a(href='#skills_link') Skills
             li.nav
-              a(href='#projects') Projects
+              a(href='#projects_link') Projects
             li.nav
-              a(href='#publications') Publications
+              a(href='#publications_link') Publications
             li.nav
               a(href='#resume_link') Resume
             li.nav
@@ -73,20 +73,41 @@ div#main
                 li DOM
                 li JSON
                 li Big O
+  span#projects_link
   div.sec_header_black
-    = "Projects"
-    ul
-      li Political Discord
-      li Basketball Sim
+    div#projects
+      = "Projects"
+      table
+        tr
+          th Political Discord
+          th Basketball Simulator
+  span#publications_link
   div.sec_header_white
-    = "Publications"
-    ul
-      li Buoy Paper
+    div#publications
+      = "Publications"
+      div.main_text
+        table
+          tr
+            th(colspan='2') CFD ​Supported ​Examination ​of ​Buoy ​Design ​for ​Wave Energy ​Conversion
+          tr
+            td 
+              img(src='images/buoy.png')
+            td
+              = "An oscillating buoy power device (OD) is investigated as a potential wave energy converter. \
+                  The OD moves up and down to convert wave energy to electricity by means of a mechanical \ 
+                  or hydraulic system. In this work, a rectangular shape buoy (OD) is used to validate the CFD \
+                  model against experimental data available in the literature."
+          tr 
+            td
+            td(class='link')
+              a(href='') Read more >>
   span#resume_link
   div.sec_header_black
-    = "Resume"
     div#resume
-      a(href='media/Resume.pdf') ⭳
+      = "Resume"
+      div.main_text
+        = "Download and/or view .pdf "
+        a(href='media/Resume.pdf') ⭳
   span#contact_link
   div.sec_header_white
     div#contact
