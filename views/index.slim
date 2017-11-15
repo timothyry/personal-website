@@ -1,9 +1,14 @@
+/* added to pre-load images to browser cache */
+div#preload
+  img(src='images/buoy.png')
+  img(src='images/main_img.png')
+  img(src='images/main_img2.png')
 div#main
   div#banner
     table#banner
       tr#banner
         td#top
-          a(href='/#top') ▲
+          a(href='/#preload') ▲
         td#name
           = "TIMOTHY RYAN EMMERICH"
           div#professions
@@ -20,15 +25,9 @@ div#main
             li.nav
               a(href='#publications_link') Publications
             li.nav
-              a(href='#resume_link') Resume
+              a(href='#resume_link') Résumé
             li.nav
               a(href='#contact_link') Contact
-  - about_text = "I'm a burgeoning software developer interested in data analysis and web applications. \
-                  Previously a mechanical engineer, I enjoy applying similar concepts of design within the world of code. \
-                  Math & science tutor. NBA enthusiast 🏀. \
-                  \
-                  I've been programming on and off for the past 15 years. I"
-                  
                   
   div.divider
   
@@ -39,7 +38,11 @@ div#main
     div#about
       = "About"
       div.main_text
-        = about_text
+        = "I'm a burgeoning software developer interested in data analysis and web applications. \
+                  Previously a mechanical engineer, I enjoy applying similar concepts of design within the world of code. \
+                  Math & science tutor. NBA enthusiast 🏀. \
+                  \
+                  I've been programming on and off for the past 15 years. I"
   span#skills_link
   div.sec_header_white
     div#skills
@@ -88,26 +91,33 @@ div#main
       div.main_text
         table
           tr
-            th(colspan='2') CFD ​Supported ​Examination ​of ​Buoy ​Design ​for ​Wave Energy ​Conversion
+            th  CFD ​Supported ​Examination ​of ​Buoy ​Design ​for ​Wave Energy ​Conversion
           tr
-            td 
+            td.image
               img(src='images/buoy.png')
+          tr
             td
               = "An oscillating buoy power device (OD) is investigated as a potential wave energy converter. \
                   The OD moves up and down to convert wave energy to electricity by means of a mechanical \ 
                   or hydraulic system. In this work, a rectangular shape buoy (OD) is used to validate the CFD \
                   model against experimental data available in the literature."
           tr 
-            td
             td(class='link')
-              a(href='') Read more >>
+              a(href='https://www.flow3d.com/wp-content/uploads/2014/08/CFD-Supported-Examination-of-Buoy-Design-for-Wave-Energy-Conversion.pdf') ⏩ Read more
   span#resume_link
   div.sec_header_black
     div#resume
-      = "Resume"
+      = "Résumé"
       div.main_text
-        = "Download and/or view .pdf "
-        a(href='media/Resume.pdf') ⭳
+        table
+          tr
+            td 
+              = "Click to download Adobe .pdf "
+              i(class='fa fa-file-pdf-o pdf')
+          tr
+            td
+              a(href='media/Resume.pdf')
+                i(class='fa fa-cloud-download download')
   span#contact_link
   div.sec_header_white
     div#contact
@@ -121,8 +131,9 @@ div#main
               li.contact
                 a(href='http://github.com/timothyry' class='fa fa-github')
               li.contact
-                a(href='http://twitter.com/palebeatz' class='fa fa-twitter')
+                a(href='http://twitter.com/tr_codes' class='fa fa-twitter')
               li.contact
                 a(href='http://facebook.com/timothyry' class='fa fa-facebook')
               li.contact
                 a(href='http://instagram.com/timothyry' class='fa fa-instagram')
+      p — website designed by tr emmerich —

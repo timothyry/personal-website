@@ -2,10 +2,17 @@
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
+div#preload
+{
+	height: 1px;
+	width: 1px;
+	visibility: hidden;
+	overflow: hidden;
+}
 span {
   display: block;
-  height: 4.4em; /*same height as header*/
-  margin-top: -4.4em; /*same height as header*/
+  height: 4.45em; /*same height as header*/
+  margin-top: -4.45em; /*same height as header*/
   visibility: hidden;
 }
 
@@ -37,17 +44,17 @@ div#professions {
 	font-size: 0.5em;
 	font-style: italic;
 	font-variant: normal;
-  padding-bottom: 5px;
+	padding-bottom: 0.4em;
   font-weight: normal;
 }
 div.divider {
 	position: relative;
-  padding: 6em 0 0 0;
+  padding: 8em 0 0 0;
   background: white;
 }
 div.sec_header_white {
   font-family: Contrail One;
-  font-size: 2em;
+  font-size: 3em;
   font-style: normal;
   font-variant: normal;
   background: white;
@@ -57,7 +64,7 @@ div.sec_header_white {
 }
 div.sec_header_black {
   font-family: Contrail One;
-  font-size: 2em;
+  font-size: 3em;
   font-style: normal;
   font-variant: normal;
   background: black;
@@ -134,15 +141,39 @@ div#publications td {
 	font-size: 0.8em;
 	padding: 1em;
 }
+div#publications td.image {
+	text-align: center;
+}
 div#publications td.link {
 	text-align: right;
 	padding: 0 10% 0 0;
 }
 div#publications th {
-	font-family: Times New Roman;
+	text-align: center;
 }
 div#contact table {
 	margin: 0 auto;
+}
+div#resume i.pdf {
+	color: red;
+}
+div#resume i.download {
+	color: green;
+	font-size: 2em;
+	opacity: 0.7;
+}
+div#resume i:hover {
+	opacity: 1;
+}
+div#resume table {
+	align: center;
+	margin: 0 auto;
+	color: #888888;
+}
+div#contact p {
+	font-size: 0.5em;
+	color: #888888;
+	text-decoration: italics;
 }
 div.main_text {
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
@@ -331,7 +362,10 @@ div#main_pic:active {
 	right: 0px;
 }
 
-@media only screen and (max-width : 640px) {
+@media only screen 
+    and (max-device-width: 640px), 
+    only screen and (max-device-width: 667px), 
+    only screen and (max-width: 480px) { 
 
 	header {
 
@@ -346,7 +380,6 @@ div#main_pic:active {
 	}
 
 	nav ul, nav:active ul { 
-
 		display: none;
 		position: absolute;
 		padding: 20px;
@@ -376,3 +409,4 @@ div#main_pic:active {
 		display: block;
 
 	}
+}
