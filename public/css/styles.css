@@ -340,7 +340,6 @@ div#main_pic {
 	height: 80%;
 	overflow: hidden;
 	bottom: 0;
-	left: 10%;
 	position: absolute;
 }
 
@@ -356,12 +355,11 @@ div#main_pic:active {
 	height: 80%;
 	overflow: hidden;
 	bottom: 0;
-	left: 10%;
 	position: absolute;
 }
 
 div#blog_area {
-	height: 80vh;
+	height: 80%;
 	width: 100%;
 	background: white;
 }
