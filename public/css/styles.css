@@ -372,13 +372,9 @@ div#main_pic:active {
 		position: absolute;
 
 	}
-
 	#menu-icon {
-
 		display:inline-block;
-
 	}
-
 	nav ul, nav:active ul { 
 		display: none;
 		position: absolute;
@@ -391,22 +387,15 @@ div#main_pic:active {
 		border-radius: 4px 0 4px 4px;
 
 	}
-
 	nav li {
-
 		text-align: center;
 		width: 100%;
 		padding: 10px 0;
 		margin: 0;
 
 	}
-	
 	ul {
-		
-
-	nav:hover ul {
-
+		nav:hover ul {
 		display: block;
-
 	}
 }
