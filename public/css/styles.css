@@ -331,6 +331,7 @@ body {
 div#main_pic {
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: bottom;
 	opacity: 1;
 	margin: 0;
 	padding: 0;
@@ -341,12 +342,12 @@ div#main_pic {
 	overflow: hidden;
 	bottom: 0;
 	position: absolute;
-	border: 1px solid black;
 }
 
 div#main_pic:active {
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: bottom;
 	opacity: 1;
 	margin: 0;
 	padding: 0;
@@ -357,7 +358,6 @@ div#main_pic:active {
 	overflow: hidden;
 	bottom: 0;
 	position: absolute;
-	border: 1px solid black;
 }
 
 div#blog_area {
