@@ -28,12 +28,12 @@ div#banner {
 	font-style: normal;
 	font-variant: normal;
   background: white;
-  align-content: center;
   margin: 0;
   padding: 0;
   text-align: center;
   position: fixed;
   width: 100%;
+  height: 11vh;
   top: 0;
   border-bottom: 0.05em dashed #ffb90f;
   z-index: 1;
@@ -49,7 +49,7 @@ div#professions {
 }
 div.divider {
 	position: relative;
-  padding: 20vh 0 0 0;
+  padding: 4.5em 0 0 0;
   background: white;
 }
 div.sec_header_white {
@@ -59,6 +59,7 @@ div.sec_header_white {
   font-variant: normal;
   background: white;
   width: 100%;
+  min-height: 100vh;
   text-align: center;
   color: black;
 }
@@ -69,6 +70,7 @@ div.sec_header_black {
   font-variant: normal;
   background: black;
   width: 100%;
+  min-height: 100vh;
   color: white;
   text-align: center;
 }
@@ -115,6 +117,18 @@ div#resume {
   width: 70%;
   margin: 0 auto;
 }
+div#resume ul {
+	background-color: #ffb90f;
+	text-align: center;
+	border: 1em dotted ##ffb90f;
+	border-radius: 2em;
+	padding: 0.5em;
+	width: auto;
+}
+div#resume li {
+	float: left;
+	padding: 0.3em;
+}
 div#publications {
 	padding: 1em;
 	margin: 0 auto;
@@ -156,7 +170,9 @@ div#contact table {
 }
 div#resume i.pdf {
 	color: red;
+	opacity: 0.7;
 }
+
 div#resume i.download {
 	color: green;
 	font-size: 2em;
@@ -249,7 +265,6 @@ li.contact:hover {
 }
 ul.contact {
 	list-style-type: none;
-	content-align: center;
 	text-align: center;
 }
 
@@ -301,6 +316,11 @@ body {
 .fa-facebook {
   background: #3B5998;
   color: white;
+}
+
+.fa-file-word-o {
+	color: blue;
+	opacity: 0.7;
 }
 
 .fa-github {
@@ -361,7 +381,7 @@ div#main_pic:active {
 }
 
 div#blog_area {
-	height: 80vh;
+	height: 89vh;
 	width: 100%;
 	background: white;
 }

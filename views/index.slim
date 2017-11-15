@@ -110,15 +110,14 @@ div#main
     div#resume
       = "Résumé"
       div.main_text
-        table
-          tr
-            td 
-              = "Click to download Adobe .pdf "
+        ul 
+          li
+            a(href='media/resume.pdf')
               i(class='fa fa-file-pdf-o pdf')
-          tr
-            td
-              a(href='media/Resume.pdf')
-                i(class='fa fa-cloud-download download')
+          li
+            a(href='media/resume.doc')
+              i(class='fa fa-file-word-o')
+
   span#contact_link
   div.sec_header_white
     div#contact
