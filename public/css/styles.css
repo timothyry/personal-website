@@ -404,8 +404,8 @@ div#blog_area {
 	background-size: contain;
 }
 
-@media only screen and (max-device-width: 900px), 
-    only screen and (max-device-width: 900px), 
+@media only screen and (max-device-width: 667px), 
+    only screen and (max-device-width: 667px), 
     only screen and (max-width: 480px) { 
 
 	header {
