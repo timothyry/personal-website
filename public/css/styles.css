@@ -439,8 +439,7 @@ div#blog_area {
 		margin: 0;
 
 	}
-	td#nav ul {
-		td#nav:hover ul {
+	td#nav:hover ul {
 		display: block;
 	}
 }
