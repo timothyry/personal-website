@@ -420,7 +420,7 @@ div#blog_area {
 		display: inline;
 		color: #ffb90f;
 	}
-	td#nav ul, td#nav:active ul { 
+	td#nav ul { 
 		display: none;
 		position: absolute;
 		padding: 20px;
@@ -445,7 +445,7 @@ div#blog_area {
 		margin: 0;
 
 	}
-	td#nav:hover ul {
+	td#nav:active ul {
 		display: inline;
 	}
 }
