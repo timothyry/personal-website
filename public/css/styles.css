@@ -124,9 +124,7 @@ div#resume ul {
 	border-radius: 2em;
 }
 div#resume li {
-	position: relative;
-	display: inline-block;
-	display: block;
+	display: inline;
 	padding: 0.3em;
 }
 div#publications {
