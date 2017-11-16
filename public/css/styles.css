@@ -412,10 +412,10 @@ div#blog_area {
     only screen and (max-width: 480px) { 
 	
 	td#name {
-		font-size: 1em;
+		font-size: 0.7em;
 	}
 	#menu-icon {
-		display:inline-block;
+		display: inline-block;
 	}
 	td#nav ul, td#nav:active ul { 
 		display: none;
