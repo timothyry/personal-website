@@ -414,7 +414,7 @@ div#blog_area {
 	#menu-icon {
 		display:inline-block;
 	}
-	nav ul, nav:active ul { 
+	td#nav ul, td#nav:active ul { 
 		display: none;
 		position: absolute;
 		padding: 20px;
@@ -425,10 +425,10 @@ div#blog_area {
 		width: 50%;
 		border-radius: 4px 0 4px 4px;
 	}
-	name {
+	td#name {
 		font-size: 1em;
 	}
-	nav li {
+	td#nav li {
 		text-align: center;
 		width: 100%;
 		padding: 10px 0;
@@ -436,8 +436,8 @@ div#blog_area {
 		margin: 0;
 
 	}
-	ul {
-		nav:hover ul {
+	td#nav ul {
+		td#nav:hover ul {
 		display: block;
 	}
 }
