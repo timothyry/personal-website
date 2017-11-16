@@ -397,7 +397,7 @@ div#preview {
 }
 
 div#blog_area {
-	height: 89vh;
+	height: 89%;
 	width: 100%;
 	background-color: black;
 	background-image: url('../images/banner_background.png');
@@ -407,12 +407,7 @@ div#blog_area {
 @media only screen and (max-device-width: 667px), 
     only screen and (max-device-width: 667px), 
     only screen and (max-width: 480px) { 
-
-	header {
-
-		position: absolute;
-
-	}
+		
 	#menu-icon {
 		display:inline-block;
 	}
@@ -426,7 +421,6 @@ div#blog_area {
 		top: 60px;
 		width: 50%;
 		border-radius: 4px 0 4px 4px;
-
 	}
 	name {
 		font-size: 1em;
