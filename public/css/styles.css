@@ -397,7 +397,7 @@ div#preview {
 }
 
 div#blog_area {
-	height: 89%;
+	height: 89vh;
 	width: 100%;
 	background-color: black;
 	background-image: url('../images/banner_background.png');
