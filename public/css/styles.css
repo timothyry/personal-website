@@ -417,7 +417,7 @@ div#blog_area {
 	td#name {
 		font-size: 0.7em;
 	}
-	#menu-icon {
+	div#menu-icon {
 		color: #ffb90f;
 	}
 	td#nav ul, td#nav:active ul { 
