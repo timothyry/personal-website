@@ -249,15 +249,15 @@ td#name {
   padding-left: 1em;
 }
 
-li.nav {
+nav li {
 	display: inline-block;
 	padding: 0.5em;
 	color: black;
 }
-li.nav:hover {
+nav:hover li {
 	opacity: 0.7;
 }
-ul.nav {
+nav ul {
 	list-style-type: none;
 }
 
