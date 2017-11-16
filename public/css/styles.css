@@ -401,7 +401,7 @@ div#blog_area {
 	width: 100%;
 	background-color: black;
 	background-image: url('../images/banner_background.png');
-	background-size: contain;
+	background-size: cover;
 }
 
 @media only screen and (max-device-width: 667px), 
