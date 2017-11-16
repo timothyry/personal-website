@@ -416,6 +416,7 @@ div#blog_area {
 	}
 	#menu-icon {
 		display: inline-block;
+		color: #ffb90f;
 	}
 	td#nav ul, td#nav:active ul { 
 		display: none;
