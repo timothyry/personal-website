@@ -32,7 +32,7 @@ div#banner {
   padding: 0;
   text-align: center;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 11vh;
   top: 0;
   border-bottom: 0.2em dashed #ffb90f;
@@ -402,7 +402,7 @@ div#blog_area {
 	width: 100%;
 	background-color: black;
 	background-image: url('../images/banner_background.png');
-	background-size: cover;
+	background-size: contain;
 }
 
 @media only screen and (max-device-width: 900px), 
