@@ -41,7 +41,6 @@ div#banner {
 }
 #menu-icon {
 	display: none;
-	color: #ffb90f;
 }
 div#professions {
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
@@ -418,6 +417,7 @@ div#blog_area {
 		font-size: 0.7em;
 	}
 	div#menu-icon {
+		display: inline;
 		color: #ffb90f;
 	}
 	td#nav ul, td#nav:active ul { 
