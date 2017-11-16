@@ -433,6 +433,10 @@ div#blog_area {
 	}
 	td#name {
 		font-size: 0.5em;
+		width: 80%;
+	}
+	td#nav {
+		width: 10%;
 	}
 	td#nav li {
 		text-align: center;
