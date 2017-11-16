@@ -80,10 +80,11 @@ div#main
   div.sec_header_black
     div#projects
       = "Projects"
-      table
-        tr
-          th Political Discord
-          th Basketball Simulator
+      div.main_text
+        table
+          tr
+            th Political Discord
+            th Basketball Simulator
   span#publications_link
   div.sec_header_white
     div#publications
@@ -111,28 +112,43 @@ div#main
       div.main_text
         ul
           li
-            a(href='media/Resume.pdf')
-              i(class='fa fa-file-pdf-o pdf')
+            table
+              tr
+                td
+                  a(href='media/Resume.pdf')
+                  i(class='fa fa-file-pdf-o pdf')
+              tr
+                td
+                  p .pdf
           li
-            a(href='media/Resume.docx')
-              i(class='fa fa-file-word-o')
+            table
+              tr
+                td
+                  a(href='media/Resume.docx')
+                  i(class='fa fa-file-word-o')
+              tr
+                td
+                  p .docx
+        p.small_text
+          = "Click the icon associated with your desired file type to download."
 
   span#contact_link
   div.sec_header_white
     div#contact
       = "Contact"
-      table
-        tr
-          td
-            ul.contact
-              li.contact
-                a(href='mailto:timothyemmerich@gmail.com' class='fa fa-envelope-o')
-              li.contact
-                a(href='http://github.com/timothyry' class='fa fa-github')
-              li.contact
-                a(href='http://twitter.com/tr_codes' class='fa fa-twitter')
-              li.contact
-                a(href='http://facebook.com/timothyry' class='fa fa-facebook')
-              li.contact
-                a(href='http://instagram.com/timothyry' class='fa fa-instagram')
+      div.main_text
+        table
+          tr
+            td
+              ul.contact
+                li.contact
+                  a(href='mailto:timothyemmerich@gmail.com' class='fa fa-envelope-o')
+                li.contact
+                  a(href='http://github.com/timothyry' class='fa fa-github')
+                li.contact
+                  a(href='http://twitter.com/tr_codes' class='fa fa-twitter')
+                li.contact
+                  a(href='http://facebook.com/timothyry' class='fa fa-facebook')
+                li.contact
+                  a(href='http://instagram.com/timothyry' class='fa fa-instagram')
       p — website designed by tr emmerich —
