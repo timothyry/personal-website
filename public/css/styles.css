@@ -11,8 +11,8 @@ div#preload
 }
 span {
   display: block;
-  height: 4.45em; /*same height as header*/
-  margin-top: -4.45em; /*same height as header*/
+  height: 10%; /*same height as header*/
+  margin-top: -10%; /*same height as header*/
   visibility: hidden;
 }
 
