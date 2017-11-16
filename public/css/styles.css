@@ -359,6 +359,7 @@ div#main_pic {
 	background-image: url(../images/main_img.png);
 	width: 50%;
 	height: 80%;
+	bottom: 0;
 	overflow: hidden;
 	position: absolute;
 }
@@ -375,6 +376,7 @@ div#main_pic:active {
 	width: 50%;
 	height: 80%;
 	overflow: hidden;
+	bottom: 0;
 	position: absolute;
 }
 
