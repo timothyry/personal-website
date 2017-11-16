@@ -415,7 +415,6 @@ div#blog_area {
 		font-size: 0.7em;
 	}
 	#menu-icon {
-		display: inline-block;
 		color: #ffb90f;
 	}
 	td#nav ul, td#nav:active ul { 
@@ -436,11 +435,10 @@ div#blog_area {
 		text-align: center;
 		width: 100%;
 		padding: 10px 0;
-		
 		margin: 0;
 
 	}
 	td#nav:hover ul {
-		display: inline-block;
+		display: inline;
 	}
 }
