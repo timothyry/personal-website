@@ -36,8 +36,11 @@ div#banner {
   height: 10%;
   top: 0;
   font-size: 2em;
-  border-bottom: 0.2em dashed #ffb90f;
   z-index: 1;
+  overflow: visible;
+}
+div#banner table, tr, td {
+	height: 100%;
 }
 #menu-icon {
 	display: none;
@@ -52,7 +55,7 @@ div#professions {
 }
 div.divider {
 	position: relative;
-  padding: 15% 0 0 0;
+  padding: 10vh 0 0 0;
   background: white;
 }
 div.sec_header_white {
@@ -65,6 +68,8 @@ div.sec_header_white {
   min-height: 100vh;
   text-align: center;
   color: black;
+  margin: 0 auto;
+  padding: 0;
 }
 div.sec_header_black {
   font-family: Contrail One;
@@ -76,11 +81,17 @@ div.sec_header_black {
   min-height: 100vh;
   color: white;
   text-align: center;
+  margin: 0 auto;
+  padding: 0;
 }
 div#main {
   background: gray;
-  margin: auto;
-  padding: 0px 0px 0px 0px;
+  margin: auto 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow: auto;
 }
 div#about {
   text-decoration: none;
@@ -88,25 +99,22 @@ div#about {
   color: white;
   width: 70%;
   margin: 0 auto;
-  padding: 1em 1em 1em 1em;
-  font-size: 1.5em;
+  padding: 1em;
+  font-size: 1em;
 }
 div#contact {
   text-decoration: none;
   text-align: center;
   width: 70%;
-  align-content: center;
-  padding: 1em;
-  font-size: 1.5em;
   margin: auto;
+  padding: 1em;
+  margin: 0 auto;
 }
 div#projects {
   text-decoration: none;
   text-align: center;
   width: 70%;
-  align-content: center;
   padding: 1em;
-  font-size: 1.5em;
   margin: 0 auto;
 }
 div#projects table {
@@ -117,10 +125,9 @@ div#projects th {
 	padding: 0.5em;
 }
 div#resume {
-  padding: 1em;
   width: 70%;
   margin: 0 auto;
-  font-size: 1.5em;
+  padding: 1em;
 }
 div#resume p {
 	color: gray;
@@ -133,19 +140,19 @@ div#resume ul {
 	text-align: center;
 }
 div#resume li {
-	display: inline;
 	padding: 0.3em;
+	display: inline-block;
 }
 div#publications {
-	padding: 1em;
 	margin: 0 auto;
 	width: 70%;
-	font-size: 1.5em;
+	font-size: 1em;
+	padding: 1em;
 }
 div#publications img {
 	box-shadow: 0.5em 0.5em 0.5em #888888;
 	border: 1px solid black;
-	width: 12em;
+	width: 50%;
 }
 div#publications a {
 	text-decoration: none;
@@ -156,7 +163,7 @@ div#publications a {
 }
 div#publications table {
 	margin: 0 auto;
-	padding: 0.5em;
+	padding: 1em;
 	text-align: left;
 }
 div#publications td {
@@ -208,7 +215,6 @@ div#skills {
   padding: 1em;
   width: 70%;
   margin: 0 auto;
-  font-size: 1.5em;
 }
 div#skills table {
 	margin: auto;
@@ -251,7 +257,6 @@ td#name {
   text-align: left;
   padding-left: 1em;
 }
-
 
 li.contact {
 	float: left;
@@ -301,6 +306,7 @@ tr#banner {
 }
 table#banner {
   width: 100%;
+  height: 100%;
   border-collapse: collapse;
 }
 body {
@@ -363,8 +369,7 @@ body {
 div#main_pic {
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: bottom;
-	background-position: left;
+	background-position: left bottom;
 	opacity: 1;
 	margin: 0;
 	padding: 0;
@@ -379,8 +384,7 @@ div#main_pic {
 div#main_pic:active {
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: bottom;
-	background-position: left;
+	background-position: left bottom;
 	opacity: 1;
 	margin: 0;
 	padding: 0;
@@ -397,15 +401,15 @@ div#preview {
 	border-radius: 2em;
 	background-color: white;
 	width: 55%;
-	top: 3em;
 	height: 70%;
 	position: relative;
 	left: 40%;
 }
 
 div#blog_area {
-	height: 89vh;
+	height: 90%;
 	width: 100%;
+	padding: 10% 0 0 0;
 	background-color: black;
 	background-image: url('../images/banner_background.png');
 	background-size: cover;
@@ -415,13 +419,9 @@ div#blog_area {
     only screen and (max-device-width: 667px), 
     only screen and (max-width: 480px) { 
 	
-	td#name {
-		font-size: 0.7em;
-	}
 	div#menu-icon, div#menu-icon a {
 		display: inline;
 		color: #ffb90f;
-		font-size: 0.7em;
 		vertical-align: center;
 	}
 	td#nav ul { 
@@ -434,7 +434,7 @@ div#blog_area {
 		width: 100%;
 	}
 	td#name {
-		font-size: 0.5em;
+		font-size:1em;
 		width: 80%;
 	}
 	td#nav {
@@ -443,12 +443,12 @@ div#blog_area {
 	td#nav li {
 		text-align: center;
 		width: 100%;
-		padding: 10px 0;
+		padding: 1em 0;
 		margin: 0;
 		display: none;
 
 	}
-	td#nav a:hover + .hidden, .hidden:hover {
+	td#nav ul:active {
 		display: inline;
 	}
 }
