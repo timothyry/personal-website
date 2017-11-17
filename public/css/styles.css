@@ -231,6 +231,7 @@ td#top {
   background: #ffb90f;
   width: 10%;
   font-size: 0.5em;
+  height: 100%;
 }
 
 td#top a {
@@ -269,6 +270,7 @@ td#nav {
   font-family: Advent Pro;
   background: white;
   width: 55%;
+  height: 100%;
   text-align: right;
   font-size: 0.75em;
   padding: 0 1em 0 0;
@@ -409,27 +411,27 @@ div#blog_area {
 	background-size: cover;
 }
 
-@media only screen and (max-device-width: 667px), 
+@media only screen and (min-device-width: 667px), 
     only screen and (max-device-width: 667px), 
     only screen and (max-width: 480px) { 
 	
 	td#name {
 		font-size: 0.7em;
 	}
-	div#menu-icon {
+	div#menu-icon, div#menu-icon a {
 		display: inline;
 		color: #ffb90f;
+		font-size: 0.7em;
+		vertical-align: center;
 	}
 	td#nav ul { 
 		display: none;
-		position: absolute;
-		padding: 20px;
+		position: relative;
+		padding: 0.5em;
 		background: #fff;
-		border: 5px solid #444;
-		right: 20px;
-		top: 60px;
-		width: 50%;
-		border-radius: 4px 0 4px 4px;
+		right: 0;
+		margin: 0 auto;
+		width: 100%;
 	}
 	td#name {
 		font-size: 0.5em;
@@ -443,9 +445,10 @@ div#blog_area {
 		width: 100%;
 		padding: 10px 0;
 		margin: 0;
+		display: none;
 
 	}
-	td#nav:active ul {
+	td#nav a:hover + .hidden, .hidden:hover {
 		display: inline;
 	}
 }
