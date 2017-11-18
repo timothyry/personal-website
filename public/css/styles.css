@@ -427,9 +427,6 @@ div#blog_area {
 		display: inline;
 		color: #ffb90f;
 	}
-	div#publications, div#skills {
-		width: 100%
-	}
 	td#nav ul { 
 		display: none;
 		background: #fff;
