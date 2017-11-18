@@ -39,7 +39,7 @@ div#banner {
   z-index: 1;
   overflow: visible;
 }
-div#banner table, tr, td {
+div#banner table, div#banner tr, div#banner td {
 	height: 100%;
 }
 #menu-icon {
@@ -99,22 +99,21 @@ div#about {
   color: white;
   width: 70%;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1em 0;
   font-size: 1em;
 }
 div#contact {
   text-decoration: none;
   text-align: center;
   width: 70%;
-  margin: auto;
-  padding: 1em;
   margin: 0 auto;
+  padding: 1em 0;
 }
 div#projects {
   text-decoration: none;
   text-align: center;
   width: 70%;
-  padding: 1em;
+  padding: 1em 0;
   margin: 0 auto;
 }
 div#projects table {
@@ -127,7 +126,7 @@ div#projects th {
 div#resume {
   width: 70%;
   margin: 0 auto;
-  padding: 1em;
+	padding: 1em 0;
 }
 div#resume p {
 	color: gray;
@@ -146,8 +145,7 @@ div#resume li {
 div#publications {
 	margin: 0 auto;
 	width: 70%;
-	font-size: 1em;
-	padding: 1em;
+	padding: 1em 0;
 }
 div#publications img {
 	box-shadow: 0.5em 0.5em 0.5em #888888;
@@ -161,14 +159,13 @@ div#publications a {
 	font-size: 0.8em;
 	text-align: right;
 }
-div#publications table {
+div#publications table, div#publications tr, div#publications td {
 	margin: 0 auto;
-	padding: 1em;
 	text-align: left;
+	padding: 1em 0;
 }
 div#publications td {
 	font-size: 0.8em;
-	padding: 1em;
 }
 div#publications td.image {
 	text-align: center;
@@ -212,7 +209,7 @@ div#skills {
   text-align: center;
   text-decoration: none;
   color: black;
-  padding: 1em;
+  padding: 1em 0;
   width: 70%;
   margin: 0 auto;
 }
@@ -278,7 +275,7 @@ td#nav {
   height: 100%;
   text-align: right;
   font-size: 0.75em;
-  padding: 0 1em 0 0;
+  padding: 0.5em 1em 0 0;
   margin: 0;
 }
 
@@ -338,6 +335,11 @@ body {
 
 .fa-file-word-o {
 	color: blue;
+	opacity: 0.7;
+}
+
+.fa-file-pdf-o {
+	color: red;
 	opacity: 0.7;
 }
 
@@ -410,6 +412,7 @@ div#blog_area {
 	height: 90%;
 	width: 100%;
 	padding: 10% 0 0 0;
+	vertical-align: center;
 	background-color: black;
 	background-image: url('../images/banner_background.png');
 	background-size: cover;
@@ -422,33 +425,36 @@ div#blog_area {
 	div#menu-icon, div#menu-icon a {
 		display: inline;
 		color: #ffb90f;
-		vertical-align: center;
+	}
+	div#publications {
+		width: 100%
 	}
 	td#nav ul { 
 		display: none;
-		position: relative;
-		padding: 0.5em;
 		background: #fff;
 		right: 0;
 		margin: 0 auto;
 		width: 100%;
 	}
 	td#name {
-		font-size:1em;
+		font-size:0.5;
 		width: 80%;
 	}
 	td#nav {
 		width: 10%;
+		padding: 1em;
 	}
 	td#nav li {
 		text-align: center;
 		width: 100%;
-		padding: 1em 0;
+		padding: 0 0;
 		margin: 0;
 		display: none;
 
 	}
-	td#nav ul:active {
-		display: inline;
+	td#nav:active {
+		display: block;
+		position: relative;
+		z-index: 2;
 	}
 }
