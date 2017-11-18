@@ -408,6 +408,7 @@ div#preview {
 	width: 55%;
 	height: 70%;
 	position: absolute;
+	top: 5%;
 	right: 5%;
 	opacity: 0.6;
 }
