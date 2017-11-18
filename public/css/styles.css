@@ -115,11 +115,11 @@ div#projects {
   width: 70%;
   padding: 1em 0;
   margin: 0 auto;
-  overflow: scroll;
+  display: table;
 }
 div#projects table {
 	margin: auto;
-	font-size: 0.5em;
+	max-width: 100%;
 }
 div#projects th {
 	color: gray;
