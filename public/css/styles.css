@@ -383,7 +383,7 @@ div#main_pic {
 	height: 80%;
 	bottom: 0;
 	overflow: hidden;
-	position: relative;
+	position: absolute;
 	border: 2px solid orange;
 }
 
@@ -399,7 +399,7 @@ div#main_pic:active {
 	height: 80%;
 	overflow: hidden;
 	bottom: 0;
-	position: relative;
+	position: absolute;
 }
 
 div#preview {
@@ -409,7 +409,7 @@ div#preview {
 	background-color: white;
 	width: 55%;
 	height: 70%;
-	position: relative;
+	position: absolute;
 	opacity: 0.6;
 	border: 2px solid red;
 }
