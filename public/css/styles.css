@@ -438,6 +438,9 @@ div#blog_area {
 		height: 60%;
 		width: 35%;
 	}
+	div#preview {
+		height: 60%;
+	}
 	td#nav ul { 
 		display: none;
 		background: #fff;
