@@ -428,6 +428,9 @@ div#blog_area {
 		display: inline;
 		color: #ffb90f;
 	}
+	div.main_text {
+		font-size: 0.5em;
+	}
 	td#nav ul { 
 		display: none;
 		background: #fff;
