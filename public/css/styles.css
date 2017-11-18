@@ -421,7 +421,7 @@ div#blog_area {
 }
 
 @media only screen and (max-device-width: 667px), 
-    only screen and (max-device-width: 667px), 
+    only screen and (max-device-width: 375px), 
     only screen and (max-width: 480px) { 
 	
 	div#menu-icon, div#menu-icon a {
