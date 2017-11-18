@@ -220,6 +220,7 @@ div#skills {
 div#skills table {
 	margin: auto;
 	text-align: left;
+	padding: 0.5em;
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 }
 div#skills td {
