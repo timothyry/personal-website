@@ -9,12 +9,13 @@ div#preload
 	visibility: hidden;
 	overflow: hidden;
 }
-span {
+
+/*span {
   display: block;
-  height: 10%; /*same height as header*/
-  margin-top: -10%; /*same height as header*/
+  height: 10%;
+  margin-top: -10%;
   visibility: hidden;
-}
+}*/
 
 ul, li {
 	list-style-type: none;
