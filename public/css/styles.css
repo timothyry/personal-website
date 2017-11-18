@@ -115,6 +115,7 @@ div#projects {
   width: 70%;
   padding: 1em 0;
   margin: 0 auto;
+  overflow: scroll;
 }
 div#projects table {
 	margin: auto;
@@ -212,6 +213,7 @@ div#skills {
   padding: 1em 0;
   width: 70%;
   margin: 0 auto;
+  overflow: scroll;
 }
 div#skills table {
 	margin: auto;
