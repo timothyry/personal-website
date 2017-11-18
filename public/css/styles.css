@@ -408,7 +408,7 @@ div#preview {
 	width: 55%;
 	height: 70%;
 	position: relative;
-	left: 40%;
+	right: 10%;
 	opacity: 0.6;
 }
 
