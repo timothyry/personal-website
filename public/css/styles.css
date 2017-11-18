@@ -408,6 +408,7 @@ div#preview {
 	height: 70%;
 	position: relative;
 	left: 40%;
+	opacity: 0.7;
 }
 
 div#blog_area {
