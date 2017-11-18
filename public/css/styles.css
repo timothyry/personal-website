@@ -401,6 +401,7 @@ div#main_pic:active {
 }
 
 div#preview {
+	padding: 0.5em;
 	border: 0.2em solid #ffb90f;
 	border-radius: 2em;
 	background-color: white;
