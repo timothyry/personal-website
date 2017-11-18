@@ -416,7 +416,7 @@ div#preview {
 div#blog_area {
 	height: 90%;
 	width: 100%;
-	padding: 10% 0 0 0;
+	padding: 0 0 0 0;
 	vertical-align: center;
 	background-color: black;
 	background-image: url('../images/banner_background.png');
