@@ -120,6 +120,7 @@ div#projects {
 }
 div#projects table {
 	margin: auto;
+	table-layout: fixed;
 }
 div#projects th {
 	color: gray;
@@ -218,6 +219,7 @@ div#skills {
 }
 div#skills table {
 	margin: auto;
+	table-layout: fixed;
 	text-align: left;
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 }
