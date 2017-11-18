@@ -55,7 +55,7 @@ div#professions {
 }
 div.divider {
 	position: relative;
-  padding: 10vh 0 0 0;
+  padding: 10% 0 0 0;
   background: white;
 }
 div.sec_header_white {
@@ -414,10 +414,10 @@ div#preview {
 }
 
 div#blog_area {
-	height: 100%;
+	height: 90%;
 	width: 100%;
-	margin: 10% 0 0 0;
-	padding: 0 0 0 0;
+	margin: 0;
+	padding: 0;
 	vertical-align: center;
 	background-color: black;
 	background-image: url('../images/banner_background.png');
