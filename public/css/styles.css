@@ -116,11 +116,10 @@ div#projects {
   padding: 1em 0;
   margin: 0 auto;
   overflow: scroll;
-  display: inline;
+  display: table;
 }
 div#projects table {
 	margin: auto;
-	table-layout: fixed;
 }
 div#projects th {
 	color: gray;
@@ -215,11 +214,11 @@ div#skills {
   padding: 1em 0;
   width: 70%;
   margin: 0 auto;
+  display: table;
   overflow: scroll;
 }
 div#skills table {
 	margin: auto;
-	table-layout: fixed;
 	text-align: left;
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 }
