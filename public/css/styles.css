@@ -426,14 +426,6 @@ div#blog_area {
 		display: inline;
 		color: #ffb90f;
 	}
-	
-	div#blog_area {
-		height: 95%;
-		width: 100%;
-	}
-	div#banner {
-		height: 5%;
-	}
 	div#publications {
 		width: 100%
 	}
