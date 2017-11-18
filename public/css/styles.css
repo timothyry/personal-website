@@ -416,6 +416,7 @@ div#preview {
 div#blog_area {
 	height: 100%;
 	width: 100%;
+	margin: 10% 0 0 0;
 	padding: 0 0 0 0;
 	vertical-align: center;
 	background-color: black;
