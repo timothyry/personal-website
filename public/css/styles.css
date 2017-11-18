@@ -433,6 +433,10 @@ div#blog_area {
 	div.main_text {
 		font-size: 0.5em;
 	}
+	div#main_pic {
+		height: 60%;
+		width: 35%;
+	}
 	td#nav ul { 
 		display: none;
 		background: #fff;
