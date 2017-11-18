@@ -407,7 +407,7 @@ div#preview {
 	background-color: white;
 	width: 55%;
 	height: 70%;
-	position: relative;
+	position: absolute;
 	right: 10%;
 	opacity: 0.6;
 }
