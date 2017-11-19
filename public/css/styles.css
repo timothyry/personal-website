@@ -55,9 +55,11 @@ div#professions {
   font-weight: normal;
 }
 div.divider {
-	position: relative;
-  padding: 10% 0 0 0;
+  height: 10%;
   background: white;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 div.sec_header_white {
   font-family: Contrail One;
@@ -66,11 +68,11 @@ div.sec_header_white {
   font-variant: normal;
   background: white;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   text-align: center;
   color: black;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0;
+  padding: 1em 0 0 0;
   position: relative;
 }
 div.sec_header_black {
@@ -80,16 +82,16 @@ div.sec_header_black {
   font-variant: normal;
   background: black;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   color: white;
   text-align: center;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0;
+  padding: 1em 0 0 0;
   position: relative;
 }
 div#main {
   background: gray;
-  margin: auto 0;
+  margin:0;
   padding: 0;
   width: 100vw;
   height: 100vh;
@@ -185,11 +187,11 @@ div#publications th {
 div#contact table {
 	margin: 0 auto;
 }
-div#resume i.pdf {
+div#resume a.pdf {
 	color: red;
 	opacity: 0.7;
 }
-div#resume i:hover {
+div#resume a:hover {
 	opacity: 1;
 }
 div#resume table {
@@ -223,18 +225,20 @@ div#skills {
 div#skills table {
 	margin: auto;
 	text-align: left;
-	padding: 0.5em;
+	padding: 1em;
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 }
 div#skills td {
 	color: rgb(40,40,40);
 	font-size: 0.7em;
 	vertical-align: top;
+	padding: 0.5em 0.5em 0 0;
 }
 div#skills th {
 	font-size: 0.8em;
 	color: #ffb90f;
 	font-weight: bold;
+	padding: 0 1em 0 0;
 }
 td#top {
   background: #ffb90f;
@@ -281,13 +285,13 @@ td#nav {
   height: 100%;
   text-align: right;
   font-size: 0.75em;
-  padding: 0.5em 1em 0 0;
+  padding: 0 1em 0 0;
   margin: 0;
 }
 
 td#nav li {
 	display: inline-block;
-	padding: 0.5em;
+	padding: 0 0.5em 0 0;
 	color: black;
 }
 
@@ -404,37 +408,45 @@ div#main_pic:active {
 }
 
 div#preview {
-	padding: 1em;
 	border: 0.2em solid #ffb90f;
 	border-radius: 2em;
 	background-color: white;
 	width: 55%;
 	height: 70%;
+	padding: 1em;
 	position: absolute;
 	opacity: 0.6;
 	right: 5%;
 	top: 5%;
-	overflow: scroll;
+	overflow: hidden;
+	vertical-align: center;
+}
+div#preview_content {
+	padding: 1em;
+	background-color: white;
+	width: 95%;
+	height: 90%;
+	opacity: 0.6;
+	overflow: auto;
 }
 
-div#preview::-webkit-scrollbar-track {
+div#preview_content::-webkit-scrollbar-track {
 		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 		background-color: #F5F5F5;
 	}
-div#preview::-webkit-scrollbar {
-		width: 6px;
+div#preview_content::-webkit-scrollbar {
+		width: 0.5em;
 		background-color: #F5F5F5;
 	}
-div#preview::-webkit-scrollbar-thumb {
-	background-color: #000000;
+div#preview_content::-webkit-scrollbar-thumb {
+	background-color: #ffb90f;
 	}
 
 
 div#blog_area {
 	height: 90%;
 	width: 100%;
-	margin: 4% 0 0 0;
-	padding: 10% 0 0 0;
+	padding: 4% 0 0 0;
 	vertical-align: center;
 	position: relative;
 	background-color: black;
