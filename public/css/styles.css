@@ -414,6 +414,7 @@ div#preview {
 	opacity: 0.6;
 	right: 5%;
 	top: 5%;
+	overflow: scroll;
 }
 
 div#blog_area {
