@@ -393,21 +393,6 @@ div#main_pic {
 	position: absolute;
 }
 
-div#main_pic:active {
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: left bottom;
-	opacity: 1;
-	margin: 0;
-	padding: 0;
-	background-image: url(../images/main_img2.png);
-	width: 50%;
-	height: 65%;
-	overflow: hidden;
-	bottom: 9%;
-	position: absolute;
-}
-
 div#preview {
 	border: 0.2em solid #ffb90f;
 	border-radius: 2em;
