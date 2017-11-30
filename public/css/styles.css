@@ -39,6 +39,7 @@ div#banner {
   font-size: 2em;
   z-index: 1;
   overflow: visible;
+  border-bottom: 0.2em dashed #ffb90f;
 }
 div#banner table, div#banner tr, div#banner td {
 	height: 100%;
@@ -104,7 +105,7 @@ div#about {
   color: white;
   width: 70%;
   margin: 0 auto;
-  padding: 1em 0;
+  padding: 0;
   font-size: 1em;
 }
 div#contact {
@@ -112,13 +113,13 @@ div#contact {
   text-align: center;
   width: 70%;
   margin: 0 auto;
-  padding: 1em 0;
+  padding: 0;
 }
 div#projects {
   text-decoration: none;
   text-align: center;
   width: 70%;
-  padding: 1em 0;
+  padding: 0;
   margin: 0 auto;
   display: table;
 }
@@ -133,7 +134,7 @@ div#projects th {
 div#resume {
   width: 70%;
   margin: 0 auto;
-	padding: 1em 0;
+	padding: 0;
 }
 div#resume p {
 	color: gray;
@@ -152,7 +153,7 @@ div#resume li {
 div#publications {
 	margin: 0 auto;
 	width: 70%;
-	padding: 1em 0;
+	padding: 0;
 }
 div#publications img {
 	box-shadow: 0.5em 0.5em 0.5em #888888;
@@ -216,7 +217,7 @@ div#skills {
   text-align: center;
   text-decoration: none;
   color: black;
-  padding: 1em 0;
+  padding: 0;
   width: 70%;
   margin: 0 auto;
   display: table;
@@ -386,8 +387,8 @@ div#main_pic {
 	padding: 0;
 	background-image: url(../images/main_img.png);
 	width: 50%;
-	height: 80%;
-	bottom: 0;
+	height: 65%;
+	bottom: 9%;
 	overflow: hidden;
 	position: absolute;
 }
@@ -401,7 +402,7 @@ div#main_pic:active {
 	padding: 0;
 	background-image: url(../images/main_img2.png);
 	width: 50%;
-	height: 80%;
+	height: 65%;
 	overflow: hidden;
 	bottom: 9%;
 	position: absolute;
@@ -426,7 +427,7 @@ div#preview_content {
 	background-color: white;
 	width: 95%;
 	height: 90%;
-	opacity: 0.6;
+	opacity: 0.4;
 	overflow: auto;
 }
 
