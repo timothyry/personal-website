@@ -401,7 +401,7 @@ div#preview {
 	height: 60%;
 	padding: 1em;
 	position: absolute;
-	opacity: 0.6;
+	opacity: 0.4;
 	right: 5%;
 	top: 20%;
 	overflow: hidden;
@@ -412,7 +412,6 @@ div#preview_content {
 	background-color: white;
 	width: 95%;
 	height: 90%;
-	opacity: 0.4;
 	overflow: auto;
 }
 
@@ -457,6 +456,7 @@ div#blog_area {
 	}
 	div#preview {
 		height: 60%;
+		top: 20%;
 	}
 	td#nav ul { 
 		display: none;
