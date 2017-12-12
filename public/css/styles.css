@@ -96,8 +96,7 @@ div#main {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  position: fixed;
-  overflow: auto;
+  position: relative;
 }
 div#about {
   text-decoration: none;
@@ -439,7 +438,7 @@ div#blog_area {
 	background-size: cover;
 }
 
-@media only screen and (max-device-width: 667px), 
+@media only screen and (min-device-width: 667px), 
     only screen and (max-device-width: 375px), 
     only screen and (max-width: 480px) { 
 	
@@ -471,7 +470,6 @@ div#blog_area {
 	}
 	td#nav {
 		width: 10%;
-		padding: 1em;
 	}
 	td#nav li {
 		text-align: center;
@@ -483,7 +481,13 @@ div#blog_area {
 	}
 	td#nav:active {
 		display: block;
-		position: relative;
+		left: 0;
+		right: 0;
+		position: absolute;
 		z-index: 2;
+		width: 100%;
+	}
+	td#nav:active ul {
+		display: block;
 	}
 }
