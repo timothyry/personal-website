@@ -12,7 +12,3 @@ gem "sinatra-activerecord"
 gem "tux"
 gem "slim"
 gem "twitter"
-
-group :production do
-  gem 'sqlite3'
-end
