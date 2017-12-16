@@ -14,11 +14,18 @@ div#preload
 	overflow: hidden;
 }
 
+p.name {
+	font-family: "Courier";
+	font-size: 1.2em;
+	color: blue;
+	font-weight: bold;
+}
+
 span {
   display: block;
-  height: 10%;
-  margin-top: -10%;
-  visibility: hidden;
+  height: 10vh;
+  margin-top: -10vh;
+  visibility: none;
 }
 
 ul, li {
@@ -38,7 +45,7 @@ div#banner {
   text-align: center;
   position: fixed;
   width: 99%;
-  height: 10%;
+  height: 10vh;
   top: 0;
   font-size: 2em;
   z-index: 1;
@@ -49,6 +56,9 @@ div#banner table, div#banner tr, div#banner td {
 	height: 100%;
 }
 #menu-icon {
+	display: none;
+}
+#close-icon {
 	display: none;
 }
 div#professions {
@@ -125,7 +135,6 @@ div#projects {
   width: 70%;
   padding: 0;
   margin: 0 auto;
-  overflow-x: scroll;
 }
 div#projects img {
 	box-shadow: 0.5em 0.5em 0.5em rgb(20,20,20);
@@ -444,7 +453,6 @@ div#preview {
 	height: 60%;
 	padding: 1em;
 	position: absolute;
-	opacity: 0.4;
 	right: 5%;
 	top: 20%;
 	overflow: hidden;
@@ -456,6 +464,13 @@ div#preview_content {
 	width: 95%;
 	height: 90%;
 	overflow: auto;
+	opacity: 1;
+}
+
+img.preview {
+	border: 0.2em solid #ffb90f;
+	opacity: 1;
+	border-radius: 50%;
 }
 
 div#preview_content::-webkit-scrollbar-track {
@@ -482,7 +497,7 @@ div#blog_area {
 	background-size: cover;
 }
 
-@media only screen and (max-device-width: 667px), 
+@media only screen and (min-device-width: 667px), 
     only screen and (max-device-width: 375px), 
     only screen and (max-width: 480px) { 
 	
@@ -500,6 +515,9 @@ div#blog_area {
 	div#preview {
 		height: 60%;
 		top: 20%;
+	}
+	div#projects {
+		width: 100%;
 	}
 	td#nav ul { 
 		display: none;
@@ -531,7 +549,9 @@ div#blog_area {
 		z-index: 2;
 		width: 100%;
 	}
-	td#nav:active ul {
-		display: block;
+	td#nav:active {
+		display: inline-block;
+		position: absolute;
+		color: black;
 	}
 }
