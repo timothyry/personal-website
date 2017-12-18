@@ -7,6 +7,8 @@ require './lib/twitter_miner.rb'
 class Post < ActiveRecord::Base
 end
 
+triggerTime = Time.now + (60*15)
+  
 get '/' do
   slim :index
 end
