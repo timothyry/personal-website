@@ -440,7 +440,7 @@ div#main_pic {
 	background-image: url(../images/main_img.png);
 	width: 50%;
 	height: 65%;
-	bottom: 9%;
+	bottom: 0;
 	overflow: hidden;
 	position: absolute;
 }
@@ -489,9 +489,10 @@ div#preview_content::-webkit-scrollbar-thumb {
 div#blog_area {
 	height: 100%;
 	width: 100%;
-	padding: 10% 0 0 0;
+	padding: 0 0 0 0;
 	vertical-align: center;
 	position: relative;
+	bottom: 0;
 	background-color: black;
 	background-image: url('../images/banner_background.png');
 	background-size: cover;
