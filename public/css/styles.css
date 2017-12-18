@@ -1,7 +1,7 @@
 . {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 body {
 	overflow-y: hidden;
@@ -49,8 +49,8 @@ div#banner {
   top: 0;
   font-size: 2em;
   z-index: 1;
-  overflow: hidden;
   border-bottom: 0.2em dashed #ffb90f;
+  overflow: visible;
 }
 div#banner table, div#banner tr, div#banner td {
 	height: 100%;
@@ -498,7 +498,7 @@ div#blog_area {
 	background-size: cover;
 }
 
-@media only screen and (max-device-width: 667px), 
+@media only screen and (min-device-width: 667px), 
     only screen and (max-device-width: 375px), 
     only screen and (max-width: 480px) { 
 	
@@ -542,17 +542,35 @@ div#blog_area {
 		display: none;
 
 	}
-	td#nav:active {
-		display: block;
-		left: 0;
-		right: 0;
-		position: absolute;
-		z-index: 2;
-		width: 100%;
+	td#nav:active div#menu-icon {
+		display: none;
 	}
-	td#nav:active {
-		display: inline-block;
-		position: absolute;
+	td#nav:active ul {
+		display: block;
+		padding: 0.5em;
+		border-left: 0.5em solid #888888;
+		z-index: 2;
+		top: 0px;
+		left: 0px;
+		position: relative;
+		width: 100%;
 		color: black;
+	}
+	td#nav:active li {
+		display: block;
+	}
+	li:focus ul {
+		display: block;
+		padding: 0.5em;
+		border-left: 0.5em solid #888888;
+		z-index: 2;
+		top: 0px;
+		left: 0px;
+		position: relative;
+		width: 100%;
+		color: black;
+	}
+	ul:focus ul, li {
+				display: block;
 	}
 }
