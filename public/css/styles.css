@@ -20,7 +20,7 @@ p.name {
 	color: blue;
 	font-weight: bold;
 }
-input[type=checkbox] {
+input[type="checkbox"] {
 	display: none;
 }
 
@@ -344,7 +344,7 @@ td#nav {
 }
 
 td#nav li {
-	display: inline-block;
+	display: inline;
 	padding: 0 0.5em 0 0;
 	color: black;
 }
