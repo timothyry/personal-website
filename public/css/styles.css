@@ -552,14 +552,12 @@ div#blog_area {
 	input[type="checkbox"]:checked ~ ul {
 		display: block;
 		padding: 0.5em;
-		top: 0px;
-		right: 25em;
 		position: relative;
 		color: black;
 		width: 50vw;
 	}
 	input[type="checkbox"]:checked ~ li {
-		display: block;
+		display: inline-block;
 		float: right;
 	}
 	input[type="checkbox"] ~ ul {
