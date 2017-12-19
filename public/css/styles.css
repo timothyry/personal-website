@@ -44,21 +44,19 @@ div#banner {
   padding: 0;
   text-align: center;
   position: fixed;
-  width: 99%;
+  width: 100vw;
   height: 10vh;
   top: 0;
   font-size: 2em;
   z-index: 1;
   border-bottom: 0.2em dashed #ffb90f;
+  display: table;
   overflow: visible;
 }
 div#banner table, div#banner tr, div#banner td {
 	height: 100%;
 }
 #menu-icon {
-	display: none;
-}
-#close-icon {
 	display: none;
 }
 div#professions {
@@ -367,6 +365,7 @@ table#banner {
   width: 100%;
   height: 100%;
   border-collapse: collapse;
+  padding: 0.5em;
 }
 body {
   padding: 0px 0px 0px 0px;
@@ -498,14 +497,10 @@ div#blog_area {
 	background-size: cover;
 }
 
-@media only screen and (max-device-width: 667px), 
+@media only screen and (min-device-width: 667px), 
     only screen and (max-device-width: 375px), 
     only screen and (max-width: 480px) { 
 	
-	div#menu-icon, div#menu-icon a {
-		display: inline;
-		color: #ffb90f;
-	}
 	div.main_text {
 		font-size: 0.5em;
 	}
@@ -521,11 +516,11 @@ div#blog_area {
 		width: 100%;
 	}
 	td#nav ul { 
-		display: none;
 		background: #fff;
-		right: 0;
-		margin: 0 auto;
+		left: 0px;
 		width: 100%;
+		margin: 0 auto;
+		color: black;
 	}
 	td#name {
 		font-size:0.5em;
@@ -534,43 +529,43 @@ div#blog_area {
 	td#nav {
 		width: 10%;
 	}
+	}
 	td#nav li {
+		display: block;
 		text-align: center;
-		width: 100%;
-		padding: 0 0;
+		padding: 0em;
 		margin: 0;
-		display: none;
-
-	}
-	td#nav:active div#menu-icon {
-		display: none;
-	}
-	td#nav:active ul {
-		display: block;
-		padding: 0.5em;
-		border-left: 0.5em solid #888888;
-		z-index: 2;
-		top: 0px;
-		left: 0px;
-		position: relative;
-		width: 100%;
 		color: black;
 	}
-	td#nav:active li {
-		display: block;
+	li a:active > ul {
+		display: none;
 	}
-	li:focus ul {
+	input[type="checkbox"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 100%;
+	color: #ffb90f;
+	}
+	
+	input[type="checkbox"]:checked ~ ul {
 		display: block;
 		padding: 0.5em;
-		border-left: 0.5em solid #888888;
-		z-index: 2;
 		top: 0px;
-		left: 0px;
+		right: 25em;
 		position: relative;
-		width: 100%;
 		color: black;
+		width: 50vw;
 	}
-	ul:focus ul, li {
-				display: block;
+	input[type="checkbox"]:checked ~ li {
+		display: block;
+		float: right;
+	}
+	input[type="checkbox"] ~ ul {
+		display: none;
+	}
+	!ul > a:active {
+		display: none;
 	}
 }
