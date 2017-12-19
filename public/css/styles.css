@@ -532,16 +532,12 @@ div#blog_area {
 	td#nav {
 		width: 10%;
 	}
-	}
 	td#nav li {
 		display: block;
 		text-align: center;
 		padding: 0em;
 		margin: 0;
 		color: black;
-	}
-	li a:active > ul {
-		display: none;
 	}
 	input[type="checkbox"] {
 	-webkit-appearance: none;
@@ -567,9 +563,6 @@ div#blog_area {
 		float: right;
 	}
 	input[type="checkbox"] ~ ul {
-		display: none;
-	}
-	!ul > a:active {
 		display: none;
 	}
 }
