@@ -351,6 +351,7 @@ td#nav li {
 
 td#nav ul {
 		list-style-type: none;
+		display: block;
 }
 td#nav li:hover {
 		opacity: 0.7;
