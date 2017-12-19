@@ -20,6 +20,9 @@ p.name {
 	color: blue;
 	font-weight: bold;
 }
+input[type=checkbox] {
+	display: none;
+}
 
 span {
   display: block;
