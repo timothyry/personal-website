@@ -3,9 +3,9 @@
   = "Hmm... Can't find post."
 - else
   - session[:lastPost] = params[:splat]
-  h1 #{post[:title]}
+  p.title #{post[:title]}
   
-  h3 #{post[:body]}
+  p.body #{post[:body]}
   
   h3 by #{User.find_by(id: post[:owner])[:name]} on #{post.created_at}
   
