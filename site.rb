@@ -2,13 +2,13 @@ require 'sinatra'
 require 'sinatra/activerecord'
 require 'sinatra/flash'
 require 'slim'
-require './models/environments.rb'
 require './models/user.rb'
 require './models/post.rb'
 require './lib/twitter_miner.rb'
 require 'digest'
 
 enable :sessions
+set :database_file, 'config/database.yml'
   
 get '/' do
   slim :index
