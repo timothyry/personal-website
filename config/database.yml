@@ -9,6 +9,7 @@ development:
 
 production:
   adapter: postgresql
+  template: template0
   encoding: UTF-8
   pool: 2
   host: ec2-54-235-148-19.compute-1.amazonaws.com
