@@ -63,7 +63,7 @@ post '/blog/login' do
     flash[:error] = "You've entered the wrong name or password. Try again."
     redirect '/blog/login'
   else
-    stored_pw = user[:password].force_encoding('utf-8')
+    stored_pw = user[:password]
     puts stored_pw
     puts test_pw
     puts stored_pw == test_pw
