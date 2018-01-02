@@ -12,6 +12,6 @@ production:
   encoding: unicode
   pool: 2
   host: ec2-54-235-148-19.compute-1.amazonaws.com
-  database: rhmddzqfnsizqt
+  database: dcs55vldcse690
   username: rhmddzqfnsizqt
   password: 2235a02522f1bba39df217276873ce6a0c6b3786a11f356a768dfd0d953c9eae
