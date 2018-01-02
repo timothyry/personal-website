@@ -9,7 +9,7 @@ development:
 
 production:
   adapter: postgresql
-  encoding: unicode
+  encoding: UTF-8
   pool: 2
   host: ec2-54-235-148-19.compute-1.amazonaws.com
   database: dcs55vldcse690
