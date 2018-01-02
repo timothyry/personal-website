@@ -57,7 +57,7 @@ end
 
 post '/blog/login' do
   user = User.find_by(name: params[:name])
-  test_pw = Digest::SHA256.digest(params[:password]).force_encoding('utf-8')
+  test_pw = Digest::SHA256.digest(params[:password]).encode('UTF-8', 'binary', invalid: :replace, undef: :replace, replace: '')
   if !user
     puts "test 1"
     flash[:error] = "You've entered the wrong name or password. Try again."
