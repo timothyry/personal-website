@@ -8,9 +8,9 @@ ruby '2.4.1'
 
 gem "sinatra"
 gem "sinatra-flash"
+gem "sqlite3"
 gem "activerecord"
 gem "sinatra-activerecord"
 gem "tux"
 gem "slim"
 gem "twitter"
-gem "sqlite3"
