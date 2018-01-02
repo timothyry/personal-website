@@ -624,6 +624,7 @@ input[type="button"] {
 	border: none;
 	padding: 1em;
 	-webkit-appearance: none;
+	border: 0.2em solid white;
 }
 
 
