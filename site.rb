@@ -1,13 +1,14 @@
 require 'sinatra'
 require 'sinatra/activerecord'
+require 'sinatra/flash'
 require 'slim'
 require './models/environments.rb'
+require './models/user.rb'
+require './models/post.rb'
 require './lib/twitter_miner.rb'
+require 'digest'
 
-class Post < ActiveRecord::Base
-end
-
-triggerTime = Time.now + (60*15)
+enable :sessions
   
 get '/' do
   slim :index
@@ -17,6 +18,63 @@ get '/blog' do
   slim :blog
 end
 
+get '/blog/login' do
+  slim :login
+end
+
+get'/blog/newPost' do
+  slim :newPost
+end
+
+get '/logout' do
+  session[:id] = nil
+  slim :blog
+end
+
 get '/admin' do
   slim :admin
+end
+
+get '/blog/post/*' do
+  session[:lastPost] = params[:splat]
+  slim :showPost
+end
+
+get '/blog/deletePost' do
+  post = Post.find_by(id: session[:lastPost])
+  post.destroy if !post.nil?
+  redirect :blog
+end
+
+post '/blog/newPost' do
+  post = Post.new
+  post[:title] = params[:title]
+  post[:body] = params[:body]
+  post[:owner] = session[:id]
+  post.save
+  redirect '/blog/post/' + post[:id].to_s
+end
+
+post '/blog/login' do
+  user = User.find_by(name: params[:name])
+  test_pw = Digest::SHA256.digest(params[:password]).force_encoding('utf-8')
+  stored_pw = user[:password].force_encoding('utf-8')
+  puts stored_pw
+  puts test_pw
+  puts stored_pw == test_pw
+  if !user
+    puts "test 1"
+    flash[:error] = "You've entered the wrong name or password. Try again."
+    redirect '/blog/login'
+  else
+    if test_pw == stored_pw
+      session[:id] = user.id
+      flash[:error] = "Welcome back, #{user[:name]}!"
+      redirect '/blog'
+    else
+      puts "test 2"
+      flash[:error] = "You've entered the wrong name or password. Try again."
+      redirect '/blog/login'
+    end
+  end
 end

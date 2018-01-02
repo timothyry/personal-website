@@ -1,1 +1,27 @@
-h1 Under Construction
+div#blog
+  h1 Blog
+
+  h2 #{Time.now}
+
+  - if Post.count < 1
+      = "No posts found."
+  - else
+    - Post.all.each do |post|
+      a href="/blog/post/#{post[:id]}"
+        = "#{post[:title]} "
+      = "("
+      p.time #{post[:updated_at]}
+      = ")"
+      </br>
+
+  - if session[:id].nil?
+      a href="blog/login" 
+        input[type="button" value="Log in"]
+      a href="/"
+        input[type="button" value="... back to main site"]
+  - else
+      a href="/blog/newPost"
+        input[type="button" value="New post"]
+      a href="/logout"
+        input[type="button" value="Log out"]
+      
