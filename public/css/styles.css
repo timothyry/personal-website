@@ -554,13 +554,16 @@ div#blog_area {
 		position: relative;
 		color: black;
 		width: 50vw;
+		-webkit-appearance: none;
 	}
 	input[type="checkbox"]:checked ~ li {
 		display: inline-block;
 		float: right;
+		-webkit-appearance: none;
 	}
 	input[type="checkbox"] ~ ul {
 		display: none;
+		-webkit-appearance: none;
 	}
 }
 
@@ -586,6 +589,7 @@ input[type=submit].login {
 	margin: auto;
 	height: 3em;
 	border: 1px solid white;
+	-webkit-appearance: none;
 }
 
 form.login {
