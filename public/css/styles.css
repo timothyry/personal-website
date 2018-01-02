@@ -597,15 +597,14 @@ form.login {
 	margin: auto;
 	text-align: center;
 	padding: 4em 2em;
-    box-shadow: 10px 10px 8px 10px #888888;
 	border: 0.2em dashed #ffb90f;
 }
 
 div#login {
 	margin: auto;
 	width: 70%;
-	margin-top: 10%;
-	padding: 0.5em;
+	margin-top: 5%;
+	background: white;
 }
 
 /* blog landing page styling */
@@ -629,23 +628,36 @@ input[type="button"] {
 	padding: 1em;
 	-webkit-appearance: none;
 	border: 0.2em solid white;
+	font-size: 1.5em;
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 }
 
 /* blog show post styling */
 
+body.showPost {
+	background-color: black;
+	background-image: url('../images/banner_background.png');
+	background-size: cover;
+}
+
 div#blog_post {
 	width: 70%;
+	background-color: white;
 	margin: auto;
+	padding: 2em;
+	margin-top: 5%;
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 }
 
 p.title {
-	display: inline-block;
-	right: 0px;
+	position: relative;
+	text-align: right;
+	font-size: 3em;
 }
 
 p.body {
-
+	position: relative;
+	font-size: 2em;
 }
 
 

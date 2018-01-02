@@ -1,21 +1,23 @@
-- post = Post.find_by(id: params[:splat])
-- if post.nil?
-  = "Hmm... Can't find post."
-- else
-  - session[:lastPost] = params[:splat]
-  p.title #{post[:title]}
-  
-  p.body #{post[:body]}
-  
-  h3 by #{User.find_by(id: post[:owner])[:name]} on #{post.created_at}
-  
-- if session[:id].nil?
-    a href="/blog/login" 
-      input[type="button" value="Log in"]
-    a href="/blog"
-      input[type="button" value="Back"]
-- else
-    a href="/blog/deletePost"
-      input[type="button" value="Delete post"]
-    a href="/blog"
-      input[type="button" value="Back"]
+body.showPost
+  div#blog_post
+    - post = Post.find_by(id: params[:splat])
+    - if post.nil?
+      = "Hmm... Can't find post."
+    - else
+      - session[:lastPost] = params[:splat]
+      p.title #{post[:title]}
+      
+      p.body #{post[:body]}
+      
+      h3 by #{User.find_by(id: post[:owner])[:name]} on #{post.created_at}
+      
+    - if session[:id].nil?
+        a href="/blog/login" 
+          input[type="button" value="Log in"]
+        a href="/blog"
+          input[type="button" value="Back"]
+    - else
+        a href="/blog/deletePost"
+          input[type="button" value="Delete post"]
+        a href="/blog"
+          input[type="button" value="Back"]
