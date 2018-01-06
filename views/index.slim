@@ -64,7 +64,7 @@ div#main
             img.preview(src='#{post[1]}')
             p.name #{post[0]}
             <hr>
-            = #{auto_link(post[2]).html_safe}
+            = #{auto_link(post[2].html_safe)}
             <br>
             p.preview_date — #{post[3].strftime("via twitter on %m/%d/%Y")}
           - else
