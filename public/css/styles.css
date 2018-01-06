@@ -636,6 +636,11 @@ p.time {
 	font-size: 0.8em;
 }
 
+textarea {
+	width: 70%;
+	height: 20%;
+}
+
 input[type="button"] {
 	background-color: #ffb90f;
 	color: white;
