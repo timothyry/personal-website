@@ -13,6 +13,7 @@ gem "sinatra-activerecord"
 gem "tux"
 gem "slim"
 gem "twitter"
+gem "twitter-text"
 gem "rake"
 
 gem 'sqlite3', :group => [:development, :test]
