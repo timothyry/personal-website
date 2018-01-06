@@ -7,6 +7,7 @@ require './models/post.rb'
 require './lib/twitter_miner.rb'
 require 'digest'
 require 'twitter-text'
+require 'active_support/core_ext/string/output_safety'
 
 include Twitter::TwitterText::Autolink
 
