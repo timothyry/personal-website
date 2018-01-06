@@ -20,10 +20,6 @@ p.name {
 	color: blue;
 	font-weight: bold;
 }
-input[type="checkbox"] {
-	display: none;
-	-webkit-appearance: none;
-}
 
 span {
   display: block;
@@ -60,9 +56,12 @@ div#banner {
 div#banner table, div#banner tr, div#banner td {
 	height: 100%;
 }
-#menu-icon {
+
+a.menu_icon {
 	display: none;
+	color: #ffb90f;
 }
+
 div#professions {
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 	font-size: 0.5em;
@@ -352,13 +351,13 @@ td#nav li {
 }
 
 td#nav ul {
-		list-style-type: none;
+	list-style-type: none;
 }
 td#nav li:hover {
 		opacity: 0.7;
 }
 
-td#nav a {
+td#nav a.link {
 	color: black;
 }
 
@@ -521,6 +520,22 @@ div#blog_area {
     only screen and (max-device-width: 375px), 
     only screen and (max-width: 480px) { 
 	
+	a.menu_icon {
+		display: inline-block;
+		position: relative;
+		color: #ffb90f;
+		right: 0px;
+		padding: 0px;
+	}
+	
+	.visible {
+		display: block;
+	}
+	
+	.invisible {
+		display: none;
+	}
+	
 	div.main_text {
 		font-size: 0.5em;
 	}
@@ -540,54 +555,28 @@ div#blog_area {
 	div#projects {
 		width: 100%;
 	}
-	td#nav ul { 
+	td#nav ul#nav_list { 
 		background: #fff;
-		left: 0px;
 		width: 100%;
 		margin: 0 auto;
 		color: black;
 	}
+	
 	td#name {
 		font-size:0.5em;
-		width: 80%;
+		width: 50%;
+		vertical-align: top;
+		padding: 0.5em;
 	}
 	td#nav {
-		width: 10%;
-		text-align: right;
+		width: 40%;
 	}
 	td#nav li {
 		display: block;
-		text-align: center;
 		padding: 0em;
 		margin: 0;
 		color: black;
-	}
-	
-	input[type="checkbox"] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	color: #ffb90f;
-	display: block;
-	right: 5%;
-	}
-	
-	input[type="checkbox"]:checked ~ ul {
-		display: block;
-		padding: 0.5em;
-		position: relative;
-		color: black;
-		width: 50vw;
-		-webkit-appearance: none;
-	}
-	input[type="checkbox"]:checked ~ li {
-		display: inline-block;
-		float: right;
-		-webkit-appearance: none;
-	}
-	input[type="checkbox"] ~ ul {
-		display: none;
-		-webkit-appearance: none;
+		right: 0em;
 	}
 }
 
@@ -685,6 +674,3 @@ p.body {
 	position: relative;
 	font-size: 2em;
 }
-
-
-

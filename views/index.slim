@@ -2,6 +2,16 @@
 div#preload
   img(src='images/buoy.png')
   img(src='images/main_img.png')
+  javascript:
+    function toggle_menu() {
+      var nav = document.getElementById("nav_list");
+      if (nav.className === "visible") {
+        nav.className = "invisible";
+      } 
+      else {
+            nav.className = "visible"; 
+      }
+    }
 div#main
   div#banner
     table#banner
@@ -14,22 +24,22 @@ div#main
             = "Software Developer \/\/ Mechanical Engineer"
         end
         td#nav
-          input[type="checkbox" class="fa fa-bars"]
-          ul
+          a(href='#' class='fa fa-bars menu_icon' onClick='toggle_menu()')
+          ul#nav_list class="invisible"
             li
-              a(href='#about_link') About
+              a(href='#about_link' onClick='toggle_menu()' class='link') About
             li
-              a(href='#skills_link') Skills
+              a(href='#skills_link' onClick='toggle_menu()' class='link') Skills
             li
-              a(href='#projects_link') Projects
+              a(href='#projects_link' onClick='toggle_menu()' class='link') Projects
             li
-              a(href='#publications_link') Publications
+              a(href='#publications_link' onClick='toggle_menu()' class='link') Publications
             li
-              a(href='#resume_link') Résumé
+              a(href='#resume_link' onClick='toggle_menu()' class='link') Résumé
             li
-              a(href='/blog') Blog
+              a(href='/blog' onClick='toggle_menu()' class='link') Blog
             li
-              a(href='#contact_link') Contact 
+              a(href='#contact_link' onClick='toggle_menu()' class='link') Contact 
   span#top_link
   div#blog_area
     div#main_pic ontouchstart=""
@@ -41,7 +51,7 @@ div#main
             h2 #{post[:title]}
             = post[:body][0..140]
             - if post[:body].length > 140
-              a(href="#") ⏩ Read more
+              a(href="#") ... ⏩ Read more
             <br>
             p.preview_date — #{post[:created_at].strftime("via the blog on %m/%d/%Y")}
           
