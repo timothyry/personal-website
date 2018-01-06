@@ -561,7 +561,6 @@ div#blog_area {
 		padding: 0em;
 		margin: 0;
 		color: black;
-		border: 2px solid black;
 	}
 	
 	input[type="checkbox"] {
@@ -570,6 +569,7 @@ div#blog_area {
 	appearance: none;
 	color: #ffb90f;
 	display: block;
+	right: 5%;
 	}
 	
 	input[type="checkbox"]:checked ~ ul {
