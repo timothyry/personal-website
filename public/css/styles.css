@@ -463,12 +463,27 @@ div#preview {
 	vertical-align: center;
 }
 div#preview_content {
+	font-size: 1.3em;
 	padding: 1em;
 	background-color: white;
 	width: 95%;
 	height: 90%;
 	overflow: auto;
 	opacity: 1;
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}
+
+p.preview_date {
+	display: block;
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+	padding: 0.2em;
+	font-style: italic;
+	color: darkgray;
+	font-weight: bold;
+	font-family: monospace;
+	text-decoration: underline;
 }
 
 img.preview {
@@ -517,6 +532,11 @@ div#blog_area {
 		height: 60%;
 		top: 20%;
 	}
+	
+	div#preview_content {
+		font-size: 1em;
+	}
+	
 	div#projects {
 		width: 100%;
 	}
@@ -541,6 +561,7 @@ div#blog_area {
 		padding: 0em;
 		margin: 0;
 		color: black;
+		border: 2px solid black;
 	}
 	
 	input[type="checkbox"] {

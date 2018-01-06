@@ -70,7 +70,7 @@ class Miner
             output "Error: Exceeded timeout attempts."
         end
       end
-      @posts = (@posts + @new_posts).uniq
+      @posts = !@posts.nil? ? (@posts + @new_posts).uniq : @new_posts.uniq
       puts @posts
     else
       output("Error: Not connected to twitter. Connect first.")
@@ -91,7 +91,7 @@ class Blerbs
   def dump 
     tweets = []
     @tweets.each do |tweet|
-      tweets.push [@me, @tweeter.profile_image_uri.to_s, tweet.full_text.dup.force_encoding("utf-8")]
+      tweets.push [@me, @tweeter.profile_image_uri.to_s, tweet.full_text.dup.force_encoding("utf-8"), tweet.created_at]
     end
   tweets
   end

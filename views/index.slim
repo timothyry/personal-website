@@ -35,16 +35,29 @@ div#main
     div#main_pic ontouchstart=""
     div#preview
       div#preview_content
-        - mole = Miner.new 
-        - mole.load('./lib/posts.yml')
-        - post = mole.pop
-        - if post
+        - if rand(3) == 2
+          - post = Post.all.sample
+          - if post
+            h2 #{post[:title]}
+            = post[:body][0..100]
+            - if post[:body].length > 100
+              a(href="#") read more
+            <br>
+            p.preview_date — #{post[:created_at].strftime("via the blog on %m/%d/%Y")}
+          
+        -else
+          - mole = Miner.new 
+          - mole.load('./lib/posts.yml')
+          - post = mole.pop
+          - if post
             img.preview(src='#{post[1]}')
             p.name #{post[0]}
             <hr>
             = post[2]
-        - else
-          = "No no posts today."
+            <br>
+            p.preview_date #{post[3].strftime("via twitter on %m/%d/%Y")}
+          - else
+            = "No no posts today."
             
 
     
