@@ -12,7 +12,7 @@ production:
   template: template0
   encoding: UTF-8
   pool: 2
-  host: ENV['HOST']
-  database: ENV['DB']
-  username: ENV['USER']
-  password: ENV['CRED']
+  host: <%= ENV['HOST'] %>
+  database: <%= ENV['DB'] %>
+  username: <%= ENV['USER'] %>
+  password: <%= ENV['CRED'] %>
