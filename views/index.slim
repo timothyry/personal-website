@@ -63,7 +63,7 @@ div#main
           - if post
             img.preview(src='#{post[1]}')
             p.name #{post[0]}
-            = "#{Twitter::Autolink.auto_link(post[2])}"
+            = "#{auto_link(post[2])}"
             <hr>
             <br>
             p.preview_date — #{post[3].strftime("via twitter on %m/%d/%Y")}

@@ -8,6 +8,8 @@ require './lib/twitter_miner.rb'
 require 'digest'
 require 'twitter-text'
 
+include Twitter::TwitterText::Autolink
+
 enable :sessions
 set :database_file, 'config/database.yml'
   
