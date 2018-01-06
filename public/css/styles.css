@@ -263,6 +263,7 @@ p.small_text {
 	color: #888888;
 	text-decoration: italics;
 }
+
 div.main_text {
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 	font-size: 0.7em;
@@ -532,6 +533,7 @@ div#blog_area {
 	}
 	td#nav {
 		width: 10%;
+		text-align: right;
 	}
 	td#nav li {
 		display: block;
@@ -540,6 +542,7 @@ div#blog_area {
 		margin: 0;
 		color: black;
 	}
+	
 	input[type="checkbox"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
