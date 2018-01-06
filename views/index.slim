@@ -64,9 +64,7 @@ div#main
             img.preview(src='#{post[1]}')
             p.name #{post[0]}
             <hr>
-            - linked_tweet = auto_link(post[2]).html_safe
-            - puts linked_tweet
-            == linked_tweet
+            == auto_link(post[2]).html_safe
             <br>
             p.preview_date — #{post[3].strftime("via twitter on %m/%d/%Y")}
           - else
