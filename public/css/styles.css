@@ -460,15 +460,15 @@ div#preview {
 	top: 20%;
 	overflow: hidden;
 	vertical-align: center;
+	opacity: 0.8;
 }
 div#preview_content {
 	font-size: 1.3em;
 	padding: 1em;
 	background-color: white;
 	width: 95%;
-	height: 85%;
-	overflow: auto;
-	opacity: 1;
+	max-height: 90%;
+	overflow: scroll;
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 }
 
