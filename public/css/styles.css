@@ -479,7 +479,7 @@ div#preview_content {
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 }
 
-div#preview_content ul, li {
+div#preview_content ul, div#preview_content li {
 	list-style-type: disc;
 	padding-left: 1em;
 }
