@@ -703,6 +703,10 @@ p.title {
 	font-size: 3em;
 }
 
-div#blog_post div.body *{
+div#blog_post div.body {
+	all: initial;
+}
+
+div#blog_post div.body ul, li {
 	all: initial;
 }
