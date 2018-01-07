@@ -1,19 +1,16 @@
-body.showPost
+body.blog
   div#blog
-    h1 Blog
-
-    h2 #{Time.now}
-
-    - if Post.count < 1
-        = "No posts found."
-    - else
-      - Post.all.each do |post|
-        a href="/blog/post/#{post[:id]}"
-          = "#{post[:title]} "
-        = "("
-        p.time #{post[:updated_at]}
-        = ")"
-        </br>
+    div.canvas
+      - if Post.count < 1
+          = "No posts found."
+      - else
+        - Post.all.each do |post|
+          a href="/blog/post/#{post[:id]}"
+            = "#{post[:title]} "
+          = "("
+          p.time #{post[:updated_at].strftime("%m/%d/%y")}
+          = ")"
+          </br>
 
     - if session[:id].nil?
         a href="blog/login" 

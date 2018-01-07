@@ -7,9 +7,15 @@ body.showPost
       - session[:lastPost] = params[:splat]
       p.title #{post[:title]}
       
-      p.body #{post[:body]}
+      - user = User.find_by(id: post[:owner])
+      - username = user.nil? ? "Unknown User" : user[:name]
       
-      h3 by #{User.find_by(id: post[:owner])[:name]} on #{post.created_at}
+      p.date by #{username} on #{post.created_at}
+      
+      <hr>
+      
+      p.body 
+      == markdown(post[:body])
       
     - if session[:id].nil?
         a href="/blog/login" 
@@ -18,6 +24,8 @@ body.showPost
           input[type="button" value="Back"]
     - else
         a href="/blog/deletePost"
-          input[type="button" value="Delete post"]
+          input[type="button" value="Delete"]
+        a href="/blog/newPost?id=#{post.id}"
+          input[type="button" value="Edit"]
         a href="/blog"
           input[type="button" value="Back"]

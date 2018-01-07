@@ -49,10 +49,10 @@ div#main
           - post = Post.all.sample
           - if post
             h2 #{post[:title]}
-            = post[:body][0..140]
-            - if post[:body].length > 140
-              a(href="#") 
-              = "... ⏩ Read more"
+            == markdown(post[:body][0..200])
+            - if post[:body].length > 200
+              a(href="/blog/post/#{post[:id]}") 
+                = "... ⏩ Read more"
             <br>
             p.preview_date — #{post[:created_at].strftime("via the blog on %m/%d/%Y")}
           

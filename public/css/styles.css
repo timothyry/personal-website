@@ -475,9 +475,13 @@ div#preview_content {
 p.preview_date {
 	display: block;
 	position: absolute;
-	right: 5%;
-	bottom: 5%;
-	padding: 0.2em;
+	text-align: right;
+	width: 90%;
+	background: #ebebe0;
+	padding: 0.2em 1em 0.2em 0.2em;
+	margin: 1em;
+	right: 0;
+	bottom: 0;
 	font-style: italic;
 	color: darkgray;
 	font-weight: bold;
@@ -622,12 +626,24 @@ div#login {
 
 /* blog landing page styling */
 
+body.blog {
+	padding: 0;
+	margin: 0;
+	background-color: black;
+	background-image: url('../images/banner_background.png');
+	background-size: cover;
+}
+
 div#blog {
 	width: 70%;
-	margin: auto;
+	margin: 0 auto;
 	padding: 1em;
 	background: white;
-	margin-top: 5%;
+}
+
+div.canvas {
+	width: 100%;
+	height: 70vh;
 }
 
 p.time {
@@ -636,10 +652,16 @@ p.time {
 	font-size: 0.8em;
 }
 
-textarea {
+textarea.newBody {
 	width: 70%;
 	height: 20%;
+	font-size: 1em;
 }
+
+input[type=text].newTitle {
+		font-size: 1em;
+}
+	
 
 input[type="button"] {
 	background-color: #ffb90f;
@@ -658,6 +680,11 @@ body.showPost {
 	background-color: black;
 	background-image: url('../images/banner_background.png');
 	background-size: cover;
+}
+
+div#blog_post p.date {
+	text-align: right;
+	display: block;
 }
 
 div#blog_post {

@@ -1,10 +1,22 @@
-form method="post"
-  = "Title: "
-  input[type="text" name="title"]
-  </br>
-  = "Body: "
-  textarea name="body"
-  </br>
-  input[type="submit" value="Submit Post"]
-  a href="/blog" 
-    input[type="button" value="Cancel and Discard Changes"]
+- puts params.inspect
+- post = Post.new
+- if params[:id]
+  - findPost = Post.find_by(id: params[:id])
+  - if findPost
+    - post = findPost
+    
+body.showPost
+  div#blog_post
+    form method="post"
+      p.title
+        = "Title:"
+        input[type="text" name="title" class="newTitle" value="#{post[:title]}"]
+      </br>
+      p.body
+        = "Body: "
+        textarea name="body" class="newBody"
+          = post[:body]
+      </br>
+      input[type="submit" value="Submit Post"]
+      a href="/blog" 
+        input[type="button" value="Cancel and Discard Changes"]

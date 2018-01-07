@@ -6,13 +6,19 @@ require './models/user.rb'
 require './models/post.rb'
 require './lib/twitter_miner.rb'
 require 'digest'
-require 'twitter-text'
+# require 'twitter-text'
+require 'redcarpet'
 require 'active_support/core_ext/string/output_safety'
 
-include Twitter::TwitterText::Autolink
+# include Twitter::TwitterText::Autolink
 
 enable :sessions
 set :database_file, 'config/database.yml'
+
+def markdown(text)
+  markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+  markdown.render(text)
+end
   
 get '/' do
   slim :index
@@ -40,8 +46,12 @@ get '/admin' do
 end
 
 get '/blog/post/*' do
-  session[:lastPost] = params[:splat]
-  slim :showPost
+  if Post.find_by(id: params[:splat])
+    session[:lastPost] = params[:splat]
+    slim :showPost
+  else
+    redirect :blog
+  end
 end
 
 get '/blog/deletePost' do
@@ -51,12 +61,24 @@ get '/blog/deletePost' do
 end
 
 post '/blog/newPost' do
-  post = Post.new
-  post[:title] = params[:title]
-  post[:body] = params[:body]
-  post[:owner] = session[:id]
-  post.save
-  redirect '/blog/post/' + post[:id].to_s
+  if params[:id].nil?
+    post = Post.new
+    post[:title] = params[:title]
+    post[:body] = params[:body]
+    post[:owner] = session[:id]
+    post.save
+  else
+    post = Post.find_by(id: params[:id])
+    if post.nil?
+      flash[:error] = "Woah, something went wrong!"
+      redirect '/blog/newPost'
+    else
+      post[:title] = params[:title]
+      post[:body] = params[:body]
+      post.save
+      redirect '/blog/post/' + post[:id].to_s
+    end
+  end
 end
 
 post '/blog/login' do

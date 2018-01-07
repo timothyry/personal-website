@@ -14,10 +14,11 @@ gem "activesupport"
 gem "tux"
 gem "slim"
 gem "twitter"
-gem "twitter-text"
 gem "rake"
+gem "redcarpet"
 
 gem 'sqlite3', :group => [:development, :test]
 group :production do
   gem 'pg'
+  gem 'twitter-text'
 end
