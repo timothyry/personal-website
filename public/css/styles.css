@@ -709,6 +709,5 @@ div#blog_post div.body {
 
 div#blog_post div.body ul, li {
 	list-style-type: disc;
-	margin: 1em;
-	padding: 1em;
+	padding: 0.5em;
 }
