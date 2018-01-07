@@ -704,5 +704,5 @@ p.title {
 }
 
 div#blog_post div.body {
-	all: revert;
+	all: initial;
 }
