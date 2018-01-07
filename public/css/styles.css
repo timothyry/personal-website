@@ -467,8 +467,9 @@ div#preview_content {
 	padding: 1em;
 	background-color: white;
 	width: 95%;
-	max-height: 90%;
-	overflow: scroll;
+	max-height: 85%;
+	opacity: 1;
+	overflow-y: scroll;
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 }
 
