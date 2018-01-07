@@ -53,7 +53,7 @@ div#banner {
   display: table;
   overflow: visible;
 }
-div#banner table, div#banner tr, div#banner td {
+div#banner table, div#banner td {
 	height: 100%;
 	margin-bottom: 0;
 	padding-bottom: 0;
