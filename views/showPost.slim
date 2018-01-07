@@ -15,7 +15,7 @@ body.showPost
       <hr>
       
       p.body 
-      == markdown(post[:body])
+        == markdown(post[:body])
       
     - if session[:id].nil?
         a href="/blog/login" 
