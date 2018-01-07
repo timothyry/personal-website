@@ -49,9 +49,7 @@ div#main
           - post = Post.all.sample
           - if post
             h2 #{post[:title]}
-            div#blog_post
-              div.body
-                == markdown(post[:body][0..200])
+            == markdown(post[:body][0..200])
             - if post[:body].length > 200
               a(href="/blog/post/#{post[:id]}") 
                 = "... ⏩ Read more"
