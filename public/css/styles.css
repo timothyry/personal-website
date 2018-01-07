@@ -476,7 +476,8 @@ p.preview_date {
 	display: block;
 	position: absolute;
 	text-align: right;
-	width: 90%;
+	width: 80%;
+	right: 5%;
 	background: #ebebe0;
 	padding: 0.2em 1em 0.2em 0.2em;
 	margin: 1em;
