@@ -703,6 +703,6 @@ p.title {
 	font-size: 3em;
 }
 
-p.body {
+div#blog_post div.body {
 	all: revert;
 }

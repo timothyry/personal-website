@@ -14,8 +14,7 @@ body.showPost
       
       <hr>
       
-      p.body
-        |
+      div.body
         == markdown(post[:body])
       
     - if session[:id].nil?
