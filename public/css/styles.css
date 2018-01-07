@@ -54,7 +54,9 @@ div#banner {
   overflow: visible;
 }
 div#banner table, div#banner tr, div#banner td {
-	height: vh;
+	height: 100%;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 a.menu_icon {
@@ -459,7 +461,6 @@ div#preview {
 	top: 20%;
 	overflow: hidden;
 	vertical-align: center;
-	opacity: 0.8;
 }
 div#preview_content {
 	font-size: 1.3em;
@@ -467,7 +468,6 @@ div#preview_content {
 	background-color: white;
 	width: 95%;
 	max-height: 85%;
-	opacity: 1;
 	overflow-y: auto;
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 }
