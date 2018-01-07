@@ -709,7 +709,7 @@ div#blog_post div.body {
 	all: initial;
 }
 
-div#blog_post div.body ul, li {
+div#blog_post div.body li {
 	list-style-type: disc;
-	padding: 0.5em;
+	padding: 0.5em 0.5em 0.5em 1.5em;
 }
