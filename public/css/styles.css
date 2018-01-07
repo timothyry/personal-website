@@ -680,6 +680,7 @@ body.showPost {
 	background-color: black;
 	background-image: url('../images/banner_background.png');
 	background-size: cover;
+	overflow: auto;
 }
 
 div#blog_post p.date {
