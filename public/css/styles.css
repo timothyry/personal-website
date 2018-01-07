@@ -23,8 +23,8 @@ p.name {
 
 span {
   display: block;
-  height: 10vh;
-  margin-top: -10vh;
+  height: 10%;
+  margin-top: -10%;
   visibility: none;
 }
 
@@ -69,13 +69,6 @@ div#professions {
 	font-variant: normal;
 	padding-bottom: 0.4em;
   font-weight: normal;
-}
-div.divider {
-  height: 10%;
-  background: white;
-  position: relative;
-  top: 0;
-  left: 0;
 }
 div.sec_header_white {
   font-family: Contrail One;
