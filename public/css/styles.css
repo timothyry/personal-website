@@ -277,6 +277,11 @@ div#skills {
   display: table;
   overflow: scroll;
 }
+
+div#skills ul, li {
+	list-style-type: none;
+}
+
 div#skills table {
 	margin: auto;
 	text-align: left;
