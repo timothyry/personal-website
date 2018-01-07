@@ -705,4 +705,7 @@ p.title {
 
 p.body {
 	all: initial;
+	.* {
+		all: unset;
+	}
 }
