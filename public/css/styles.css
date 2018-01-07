@@ -54,7 +54,7 @@ div#banner {
   overflow: visible;
 }
 div#banner table, div#banner tr, div#banner td {
-	height: 100%;
+	height: vh;
 }
 
 a.menu_icon {
