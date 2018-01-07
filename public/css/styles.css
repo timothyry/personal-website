@@ -704,6 +704,5 @@ p.title {
 }
 
 p.body {
-	position: relative;
-	font-size: 2em;
+	all: initial;
 }
