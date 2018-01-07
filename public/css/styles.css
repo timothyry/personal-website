@@ -708,5 +708,7 @@ div#blog_post div.body {
 }
 
 div#blog_post div.body ul, li {
-	all: initial;
+	list-style-type: disc;
+	margin: 1em;
+	padding: 1em;
 }
