@@ -476,6 +476,7 @@ div#preview_content {
 div#preview_content ul, li {
 	list-style-type: disc;
 	padding-left: 1em;
+}
 
 p.preview_date {
 	display: block;
