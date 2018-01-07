@@ -50,6 +50,7 @@ div#main
           - if post
             h2 #{post[:title]}
             == markdown(post[:body][0..200])
+            <br>
             - if post[:body].length > 200
               a(href="/blog/post/#{post[:id]}") 
                 = "... ⏩ Read more"
