@@ -705,4 +705,7 @@ p.title {
 
 div#blog_post div.body {
 	all: initial;
+	ul, li {
+		list-style-type: disc;
+	}
 }
