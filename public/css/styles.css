@@ -466,7 +466,7 @@ div#preview_content {
 	padding: 1em;
 	background-color: white;
 	width: 95%;
-	height: 90%;
+	height: 85%;
 	overflow: auto;
 	opacity: 1;
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
@@ -477,7 +477,7 @@ p.preview_date {
 	position: absolute;
 	text-align: right;
 	width: 80%;
-	right: 5%;
+	right: 10%;
 	background: #ebebe0;
 	padding: 0.2em 1em 0.2em 0.2em;
 	margin: 1em;
