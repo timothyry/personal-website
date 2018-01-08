@@ -557,6 +557,10 @@ div#blog_area {
 		display: none;
 	}
 	
+	img.tweet {
+		width: 90%;
+	}
+	
 	div.main_text {
 		font-size: 0.5em;
 	}
