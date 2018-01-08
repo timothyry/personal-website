@@ -91,15 +91,20 @@ class Blerbs
   def dump 
     tweets = []
     @tweets.each do |tweet|
-      puts "#{tweet.attrs} \n\n"
+      puts "#{tweet.attrs} \n---------------------\n"
       if tweet.attrs[:retweeted_status].nil?
         tweet_body = tweet.attrs[:full_text].force_encoding('utf-8')
       else
-        origTweeter = tweet.attrs[:entities][:user_mentions].first[:user_name].to_s
-        tweet_body = "#{tweet.attrs[:retweeted_status][:full_text].force_encoding('utf-8')}"
+        origTweeter = tweet.attrs[:entities][:user_mentions].first[:screen_name].to_s
+        tweet_body = tweet.attrs[:retweeted_status][:full_text].force_encoding('utf-8')
+        if tweet.attrs[:retweeted_status][:entities][:media].nil?
+          tweet_img = ""
+        else
+          tweet_img = tweet.attrs[:retweeted_status][:entities][:media].first[:media_url].to_s
+        end
         tweet_body.prepend("RT @#{origTweeter} ") unless origTweeter == ""
       end
-        tweets.push [@me, @tweeter.profile_image_uri.to_s, tweet_body, tweet.created_at]
+        tweets.push [@me, @tweeter.profile_image_uri.to_s, tweet_body, tweet_img, tweet.created_at]
     end
   tweets
   end

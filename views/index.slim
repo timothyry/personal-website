@@ -66,8 +66,10 @@ div#main
             p.name #{post[0]}
             <hr>
             == auto_link(post[2]).html_safe
+            - if post[3] != ""
+              img src="#{post[3]}"
             <br>
-            p.preview_date — #{post[3].strftime("via twitter on %m/%d/%Y")}
+            p.preview_date — #{post[4].strftime("via twitter on %m/%d/%Y")}
           - else
             = "No no posts today."
             
