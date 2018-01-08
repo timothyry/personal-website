@@ -36,7 +36,7 @@ get '/blog/login' do
   slim :login
 end
 
-get'/blog/newPost' do
+get '/blog/newPost' do
   if not authed?
     redirect '/blog/login'
     return
