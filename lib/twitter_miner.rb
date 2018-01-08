@@ -90,6 +90,7 @@ class Blerbs
   
   def dump 
     tweets = []
+    tweet_img = ""
     @tweets.each do |tweet|
       puts "#{tweet.attrs} \n---------------------\n"
       if tweet.attrs[:retweeted_status].nil?
@@ -97,9 +98,7 @@ class Blerbs
       else
         origTweeter = tweet.attrs[:entities][:user_mentions].first[:screen_name].to_s
         tweet_body = tweet.attrs[:retweeted_status][:full_text].force_encoding('utf-8')
-        if tweet.attrs[:retweeted_status][:entities][:media].nil?
-          tweet_img = ""
-        else
+        unless tweet.attrs[:retweeted_status][:entities][:media].nil?
           tweet_img = tweet.attrs[:retweeted_status][:entities][:media].first[:media_url].to_s
         end
         tweet_body.prepend("RT @#{origTweeter} ") unless origTweeter == ""
