@@ -96,7 +96,8 @@ class Blerbs
         tweet_body = tweet.attrs[:full_text].force_encoding('utf-8')
       else
         origTweeter = tweet.attrs[:entities][:user_mentions].first[:user_name].to_s
-        tweet_body = "RT @#{origTweeter} #{tweet.attrs[:retweeted_status][:full_text].force_encoding('utf-8')}"
+        tweet_body = "#{tweet.attrs[:retweeted_status][:full_text].force_encoding('utf-8')}"
+        tweet_body.prepend("RT @#{origTweeter} ") unless origTweeter == ""
       end
         tweets.push [@me, @tweeter.profile_image_uri.to_s, tweet_body, tweet.created_at]
     end
