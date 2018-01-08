@@ -19,6 +19,10 @@ def markdown(text)
   markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
   markdown.render(text)
 end
+
+def authed?
+  return !session[:id].nil?
+end
   
 get '/' do
   slim :index
@@ -33,6 +37,10 @@ get '/blog/login' do
 end
 
 get'/blog/newPost' do
+  unless authed?
+    redirect :login
+    return
+  end
   slim :newPost
 end
 
@@ -61,6 +69,12 @@ get '/blog/deletePost' do
 end
 
 post '/blog/newPost' do
+  
+  unless authed?
+    redirect :login
+    return
+  end
+    
   if params[:id].nil?
     post = Post.new
     post[:title] = params[:title]

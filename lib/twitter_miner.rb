@@ -84,14 +84,21 @@ class Blerbs
     @client = client
     @me = "@tr_codes"
     @tweeter = @client.user(@me)
-    @tweets = client.user_timeline(@tweeter, {:count => 100, :exclude_replies => true})
+    @tweets = @client.user_timeline(@tweeter, {:count => 100, :exclude_replies => true, :exclude_retweets => true, :tweet_mode => 'extended'})
   end
 
   
   def dump 
     tweets = []
     @tweets.each do |tweet|
-      tweets.push [@me, @tweeter.profile_image_uri.to_s, tweet.full_text.dup.force_encoding("utf-8"), tweet.created_at]
+      puts "#{tweet.attrs} \n\n"
+      if tweet.attrs[:retweeted_status].nil?
+        tweet_body = tweet.attrs[:full_text].force_encoding('utf-8')
+      else
+        origTweeter = tweet.attrs[:entities][:user_mentions].first[:user_name].to_s
+        tweet_body = "RT @#{origTweeter} #{tweet.attrs[:retweeted_status][:full_text].force_encoding('utf-8')}"
+      end
+        tweets.push [@me, @tweeter.profile_image_uri.to_s, tweet_body, tweet.created_at]
     end
   tweets
   end
