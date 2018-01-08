@@ -501,6 +501,7 @@ img.preview {
 	opacity: 1;
 	border-radius: 50%;
 	margin: 0;
+	display: inline;
 }
 
 img.tweet {
