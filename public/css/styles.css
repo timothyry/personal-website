@@ -21,6 +21,7 @@ p.name {
 	font-weight: bold;
 	padding: 0.5em;
 	display: inline;
+	vertical-align: middle;
 }
 
 span {
@@ -509,7 +510,6 @@ img.tweet {
 	display: block;
 	margin: 0.5em auto;
 	width: 65%;
-	box-shadow: 0.5em 0.5em #888888;
 }
 
 div#preview_content::-webkit-scrollbar-track {
