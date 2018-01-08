@@ -509,7 +509,7 @@ img.preview {
 img.tweet {
 	display: block;
 	margin: 0.5em auto;
-	width: 65%;
+	width: 50%;
 }
 
 div#preview_content::-webkit-scrollbar-track {
