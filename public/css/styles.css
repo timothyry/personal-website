@@ -63,6 +63,10 @@ div#banner table, div#banner td, div#banner tr {
 	border-collapse: collapse;
 }
 
+div#banner table {
+	width: 100%;
+}
+
 a.menu_icon {
 	display: none;
 	color: #ffb90f;
@@ -351,7 +355,7 @@ td#nav li {
 	display: block;
 	padding: 0 0.5em 0 0;
 	color: black;
-	float: right;
+	float: left;
 }
 
 td#nav ul {
