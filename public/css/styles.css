@@ -360,6 +360,7 @@ td#nav li {
 td#nav ul {
 	list-style-type: none;
 	right: 0;
+	font-size: 1em;
 }
 td#nav li:hover {
 		opacity: 0.7;
