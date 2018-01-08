@@ -40,8 +40,8 @@ ul, li {
 div#banner {
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 	font-size: 1em;
-	font-style: normal;
 	font-variant: normal;
+	font-style: normal;
   background: white;
   margin: 0;
   padding: 0;
@@ -341,7 +341,6 @@ ul.contact {
 td#nav {
   font-family: Advent Pro;
   background: white;
-  width: 55%;
   height: 100%;
   text-align: right;
   font-size: 0.75em;
@@ -590,7 +589,6 @@ div#blog_area {
 	
 	td#name {
 		font-size:0.5em;
-		width: 50%;
 		vertical-align: top;
 		padding: 0.5em;
 	}
