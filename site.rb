@@ -37,10 +37,11 @@ get '/blog/login' do
 end
 
 get'/blog/newPost' do
-  unless authed?
-    redirect :login
+  if not authed?
+    redirect '/blog/login'
     return
   end
+  
   slim :newPost
 end
 
@@ -70,7 +71,7 @@ end
 
 post '/blog/newPost' do
   
-  unless authed?
+  if not authed?
     redirect '/blog/login'
     return
   end
