@@ -90,8 +90,8 @@ class Blerbs
   
   def dump 
     tweets = []
-    tweet_img = ""
     @tweets.each do |tweet|
+      tweet_img = ""
       puts "#{tweet.attrs} \n---------------------\n"
       if tweet.attrs[:retweeted_status].nil?
         tweet_body = tweet.attrs[:full_text].force_encoding('utf-8')
