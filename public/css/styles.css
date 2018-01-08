@@ -281,7 +281,7 @@ div#skills {
   overflow: scroll;
 }
 
-div#skills ul, li {
+div#skills ul,div#skills li {
 	list-style-type: none;
 }
 
