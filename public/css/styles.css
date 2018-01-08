@@ -319,7 +319,6 @@ a {
 td#name {
   font-family: Advent Pro;
   background: white;
-  width: 35%;
   text-align: left;
   padding-left: 1em;
 }
@@ -352,6 +351,7 @@ td#nav li {
 	display: inline;
 	padding: 0 0.5em 0 0;
 	color: black;
+	float: right;
 }
 
 td#nav ul {
@@ -591,9 +591,6 @@ div#blog_area {
 		font-size:0.5em;
 		vertical-align: top;
 		padding: 0.5em;
-	}
-	td#nav {
-		width: 40%;
 	}
 	td#nav li {
 		display: block;
