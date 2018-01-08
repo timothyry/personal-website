@@ -71,7 +71,7 @@ end
 post '/blog/newPost' do
   
   unless authed?
-    redirect :login
+    redirect '/blog/login'
     return
   end
     
